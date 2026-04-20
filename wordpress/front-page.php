@@ -148,12 +148,13 @@ img{max-width:100%;display:block}
 /* ============================================================
    HERO
    ============================================================ */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:0 var(--px)}
+.hero{
+  position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:0 var(--px);
+  background:#0A0F1C url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1800&q=80&auto=format&fit=crop') center/cover no-repeat;
+}
 .hero-bg{
   position:absolute;inset:0;z-index:0;
-  background:
-    linear-gradient(135deg,rgba(10,15,28,.97) 0%,rgba(10,15,28,.80) 55%,rgba(10,15,28,.70) 100%),
-    url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1800&q=80&auto=format&fit=crop') center/cover no-repeat;
+  background:linear-gradient(135deg,rgba(10,15,28,.82) 0%,rgba(10,15,28,.60) 50%,rgba(10,15,28,.50) 100%);
 }
 .hero-noise{position:absolute;inset:0;z-index:1;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero-glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(21,101,192,.18) 0%,transparent 70%);top:-200px;right:-150px;pointer-events:none;z-index:1}
