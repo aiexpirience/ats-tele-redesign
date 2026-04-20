@@ -477,8 +477,8 @@ img{max-width:100%;display:block}
     <div>
       <div class="hero-badge"><span class="hero-dot"></span>Санкт-Петербург · с 2009 года</div>
       <h1 class="hero-h1">ИБП пищит, не включается<br>или ведёт себя <em>странно?</em></h1>
-      <p class="hero-sub">Проверим и скажем, что с ним, в тот же день.<br>Сразу называем цену — без «давайте разберём, а там видно будет».</p>
-      <p class="hero-promise">Работаем с юрлицами — счёт, договор, закрывающие документы</p>
+      <p class="hero-sub">Проверим и скажем, что с ним, в тот же день.<br>Сразу называем цену. Никаких «давайте разберём, а там посмотрим».</p>
+      <p class="hero-promise">Работаем с юрлицами: счёт, договор, закрывающие документы</p>
       <div class="hero-actions">
         <a href="#request" class="btn btn-primary btn-lg">Оставить заявку</a>
         <a href="tel:+78121234567" class="btn btn-outline-light btn-lg">📞 Позвонить</a>
@@ -498,7 +498,7 @@ img{max-width:100%;display:block}
       </a>
       <a href="<?php echo home_url('/shop/'); ?>" class="hlink">
         <div class="hlink-icon">🔋</div>
-        <div><div class="hlink-name">Магазин ИБП</div><div class="hlink-sub">APC, Eaton, HIDEN — новые и б/у</div></div>
+        <div><div class="hlink-name">Магазин ИБП</div><div class="hlink-sub">APC, Eaton, HIDEN · новые и б/у</div></div>
         <span class="hlink-arr">→</span>
       </a>
       <a href="<?php echo home_url('/rent/'); ?>" class="hlink">
@@ -594,13 +594,13 @@ img{max-width:100%;display:block}
       <div class="symptom-icon">💬</div>
       <div>
         <div class="symptom-text" style="color:var(--accent)">Другая ситуация?</div>
-        <div class="symptom-sub">Опишите — разберёмся по опыту и скажем, что это может быть</div>
+        <div class="symptom-sub">Опишите ситуацию, разберёмся по опыту и скажем что это может быть</div>
       </div>
     </div>
   </div>
 
   <div class="symptoms-note reveal">
-    Если есть хотя бы один пункт — ИБП уже не защищает оборудование в полную силу. Опишите ситуацию, скажем по опыту во сколько примерно выйдет.
+    Если есть хотя бы один пункт из этого списка — ИБП уже не защищает оборудование в полную силу. Опишите ситуацию, скажем по опыту во сколько примерно выйдет.
   </div>
   <a href="#request" class="btn btn-primary reveal">Описать проблему →</a>
 </section>
@@ -614,9 +614,9 @@ img{max-width:100%;display:block}
       <div class="section-tag section-tag--light">Почему не стоит тянуть</div>
       <h2 class="section-h2 section-h2--light" style="margin-bottom:32px">Обычно к нам<br>приходят не сразу</h2>
       <div class="risk-story">
-        <p>Сначала — <strong>«пищит, но работает»</strong>. Поставили на заметку и забыли.</p>
+        <p>Сначала <strong>«пищит, но работает»</strong>. Поставили на заметку и забыли.</p>
         <p>Потом свет моргнул, ИБП не удержал нагрузку. <strong>Сервер упал некорректно.</strong> Файловая система повредилась.</p>
-        <p>И вот уже ремонтируют не только ИБП — а сервер, базы данных, теряют рабочий день.</p>
+        <p>И вот уже ремонтируют не только ИБП, а ещё сервер и базы данных. Рабочий день потерян.</p>
         <p>Мы не пугаем. Просто <strong>таких историй у нас было много</strong>, и все они начинались одинаково.</p>
       </div>
     </div>
@@ -659,27 +659,27 @@ img{max-width:100%;display:block}
     <div class="rental-visual reveal">
       <div class="rental-big-num">20+</div>
       <div class="rental-cards">
-        <div class="rcard"><div class="rcard-num">1–10</div><div class="rcard-label">кВт — офисные и серверные</div></div>
-        <div class="rcard"><div class="rcard-num">10–80</div><div class="rcard-label">кВт — средние системы</div></div>
-        <div class="rcard"><div class="rcard-num">80–250</div><div class="rcard-label">кВт — промышленные</div></div>
+        <div class="rcard"><div class="rcard-num">1–10</div><div class="rcard-label">кВт: офисные и серверные</div></div>
+        <div class="rcard"><div class="rcard-num">10–80</div><div class="rcard-label">кВт: средние системы</div></div>
+        <div class="rcard"><div class="rcard-num">80–250</div><div class="rcard-label">кВт: промышленные</div></div>
         <div class="rcard"><div class="rcard-num">20+</div><div class="rcard-label">единиц в подменном фонде</div></div>
       </div>
     </div>
     <div class="rental-content reveal" data-delay="2">
       <div class="section-tag">Подменный фонд</div>
       <h2 class="section-h2">Ремонт не означает простой</h2>
-      <p class="section-lead">Забираем ваш ИБП в ремонт — привозим замену. В большинстве случаев оборудование продолжает работать без перерыва.</p>
+      <p class="section-lead">Забираем ваш ИБП в ремонт и привозим замену. В большинстве случаев оборудование продолжает работать без перерыва.</p>
       <div class="rental-feature">
         <div class="rental-feature-icon">🔄</div>
-        <div class="rental-feature-text"><strong>Подмена в день обращения</strong>Доставляем подменный ИБП, забираем неисправный — всё за один выезд</div>
+        <div class="rental-feature-text"><strong>Подмена в день обращения</strong>Доставляем подменный ИБП и забираем неисправный за один выезд</div>
       </div>
       <div class="rental-feature">
         <div class="rental-feature-icon">📐</div>
-        <div class="rental-feature-text"><strong>Подберём по мощности</strong>Есть оборудование от 1 кВт до 250 кВт — под любую задачу</div>
+        <div class="rental-feature-text"><strong>Подберём по мощности</strong>Есть оборудование от 1 кВт до 250 кВт под любую задачу</div>
       </div>
       <div class="rental-feature">
         <div class="rental-feature-icon">📋</div>
-        <div class="rental-feature-text"><strong>Договор и документы</strong>Аренда оформляется официально — договор, акт, счёт для юрлиц</div>
+        <div class="rental-feature-text"><strong>Договор и документы</strong>Аренда оформляется официально: договор, акт, счёт для юрлиц</div>
       </div>
       <a href="<?php echo home_url('/rent/'); ?>" class="btn btn-primary" style="margin-top:28px">Узнать об аренде →</a>
     </div>
@@ -699,13 +699,13 @@ img{max-width:100%;display:block}
     <div class="proc reveal" data-delay="1">
       <div class="proc-num">1</div>
       <div class="proc-title">Связь</div>
-      <p class="proc-text">Позвоните или оставьте заявку. Быстро уточним ситуацию по телефону — иногда уже на этом этапе понятна причина и примерная стоимость.</p>
+      <p class="proc-text">Позвоните или оставьте заявку. Быстро уточним ситуацию по телефону. Часто уже на этом этапе понятна причина и примерная стоимость.</p>
       <span class="proc-tag">В течение 15 минут</span>
     </div>
     <div class="proc reveal" data-delay="2">
       <div class="proc-num">2</div>
       <div class="proc-title">Диагностика</div>
-      <p class="proc-text">Привезите ИБП сами или вызовите инженера. Смотрим, называем точную стоимость. Если не подходит — ок, ничего не платите.</p>
+      <p class="proc-text">Привезите ИБП сами или вызовите инженера. Смотрим, называем точную стоимость. Если не устраивает — ничего не платите.</p>
       <span class="proc-tag">Диагностика бесплатно</span>
     </div>
     <div class="proc reveal" data-delay="3">
@@ -735,8 +735,8 @@ img{max-width:100%;display:block}
         <div class="astat"><div class="astat-num">12 мес</div><div class="astat-label">гарантия на работы</div></div>
       </div>
       <div class="about-text reveal" data-delay="2">
-        <p>Работаем с ИБП мощностью от 1,5 до 250 кВт — это промышленный и корпоративный сегмент, который требует другого уровня компетенций. Большинство конкурентов берётся за офисные ИБП до 3 кВт. Мы ремонтируем APC Symmetra 500 кВт.</p>
-        <p>Большая часть клиентов приходит по рекомендации — новых с улицы у нас было мало. До сих пор. Но сейчас хотим расти, поэтому делаем сайт и работаем с новыми обращениями так же, как с постоянными.</p>
+        <p>Работаем с ИБП мощностью от 1,5 до 250 кВт. Это промышленный и корпоративный сегмент, который требует другого уровня компетенций. Большинство конкурентов берётся за офисные ИБП до 3 кВт. Мы ремонтируем APC Symmetra 500 кВт.</p>
+        <p>Большая часть клиентов приходит по рекомендации, новых с улицы было мало. До сих пор. Но сейчас хотим расти, поэтому делаем сайт и работаем с новыми обращениями так же, как с постоянными.</p>
         <p><strong>Есть паяльная станция, нагрузочный стенд, склад запчастей.</strong> Ремонт на компонентном уровне, не «замена блоком».</p>
       </div>
     </div>
@@ -760,11 +760,11 @@ img{max-width:100%;display:block}
     <div class="reveal">
       <div class="section-tag section-tag--light">Онлайн заявка</div>
       <h2 class="section-h2 section-h2--light">Напишите, что<br>случилось с ИБП</h2>
-      <p class="form-lede">Ответим в течение 15 минут в рабочее время. Можно прикрепить фото или видео — разберёмся быстрее.</p>
+      <p class="form-lede">Ответим в течение 15 минут в рабочее время. Можно прикрепить фото или видео, так разберёмся быстрее.</p>
       <div class="form-perks">
         <div class="fperk">Диагностика бесплатная</div>
         <div class="fperk">Цену называем до начала работ</div>
-        <div class="fperk">Если не беремся — так и скажем</div>
+        <div class="fperk">Если не беремся, так и скажем</div>
         <div class="fperk">Работаем с юрлицами, пакет документов</div>
         <div class="fperk">Пн–Сб 10:00–20:00</div>
       </div>
@@ -791,7 +791,7 @@ img{max-width:100%;display:block}
             <span id="fileText">Выбрать файл</span>
           </label>
         </div>
-        <p class="form-note">* — обязательные поля. Свяжемся по указанному номеру или напишем в Telegram.</p>
+        <p class="form-note">* обязательные поля. Свяжемся по указанному номеру или напишем в Telegram.</p>
         <button class="btn btn-primary form-submit" onclick="submitForm()">Отправить заявку →</button>
       </div>
       <div class="form-success" id="reqSuccess">
@@ -810,7 +810,7 @@ img{max-width:100%;display:block}
   <div class="reveal">
     <div class="section-tag">Также работаем</div>
     <h2 class="section-h2">Полный цикл с ИБП</h2>
-    <p class="section-lead">Один подрядчик для всех задач — не нужно искать разных исполнителей.</p>
+    <p class="section-lead">Один подрядчик для всех задач. Не нужно искать разных исполнителей.</p>
   </div>
   <div class="services-grid">
     <div class="svc-card reveal" data-delay="1">
@@ -968,7 +968,7 @@ img{max-width:100%;display:block}
   <div class="cta-inner">
     <div class="reveal">
       <h2 class="cta-h2">Сломался ИБП?<br><em>Разберёмся.</em></h2>
-      <p class="cta-sub">Диагностика бесплатно. Цену называем до начала работ. Подменный ИБП на время ремонта — если нужно.</p>
+      <p class="cta-sub">Диагностика бесплатно. Цену называем до начала работ. Подменный ИБП на время ремонта, если нужно.</p>
     </div>
     <div class="cta-actions reveal" data-delay="2">
       <a href="#request" class="btn btn-white btn-lg">Оставить заявку</a>
