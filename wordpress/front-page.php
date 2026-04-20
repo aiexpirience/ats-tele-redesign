@@ -712,7 +712,7 @@ img{max-width:100%;display:block}
       </div>
     </div>
     <div class="reveal" data-delay="2">
-      <div class="form-card" id="formCard">
+      <div class="form-card" id="reqForm">
         <div class="form-field">
           <label class="form-label" for="reqName">Ваше имя *</label>
           <input class="form-input" id="reqName" type="text" placeholder="Иван Иванов" autocomplete="name">
@@ -736,7 +736,7 @@ img{max-width:100%;display:block}
         <p class="form-note">* — обязательные поля. Свяжемся по указанному номеру или напишем в Telegram.</p>
         <button class="btn btn-primary form-submit" onclick="submitForm()">Отправить заявку →</button>
       </div>
-      <div class="form-success" id="formSuccess">
+      <div class="form-success" id="reqSuccess">
         <div class="form-success-icon">✅</div>
         <div class="form-success-title">Заявка принята!</div>
         <p class="form-success-text">Ответим в течение 15 минут в рабочее время.<br>Если срочно — позвоните: <a href="tel:+78121234567" style="color:var(--accent);font-weight:700">+7 (812) 123-45-67</a></p>
@@ -924,106 +924,38 @@ img{max-width:100%;display:block}
 </section>
 
 <!-- ============================================================
-     FLOATING BUTTONS
-     ============================================================ -->
-<div class="float-wrap">
-  <a href="https://t.me/atstelecom" target="_blank" rel="noopener noreferrer" class="float-btn float-tg" title="Написать в Telegram">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-  </a>
-  <a href="tel:+78121234567" class="float-btn" style="background:var(--accent)" title="Позвонить">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
-</div>
-
-<!-- ============================================================
      JAVASCRIPT
      ============================================================ -->
 <script>
 /* Scroll reveal */
 (function(){
-  const els = document.querySelectorAll('.reveal');
+  var els = document.querySelectorAll('.reveal');
   if(!els.length) return;
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        e.target.classList.add('visible');
-        io.unobserve(e.target);
-      }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
     });
   },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(el=>io.observe(el));
+  els.forEach(function(el){io.observe(el);});
 })();
 
 /* FAQ accordion */
 function toggleFaq(btn){
-  const item = btn.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i=>{
-    i.classList.remove('open');
-    i.querySelector('.faq-a').style.maxHeight=null;
+  var item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){
+    i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;
   });
   if(!isOpen){
     item.classList.add('open');
-    item.querySelector('.faq-a').style.maxHeight = item.querySelector('.faq-a-inner').scrollHeight + 'px';
+    item.querySelector('.faq-a').style.maxHeight=item.querySelector('.faq-a-inner').scrollHeight+'px';
   }
 }
 
-/* File input label */
-function handleFile(input){
-  const label = document.getElementById('fileText');
-  label.textContent = input.files[0] ? input.files[0].name : 'Выбрать файл';
-}
-
-/* Form submit */
-function submitForm(){
-  const name  = document.getElementById('reqName').value.trim();
-  const phone = document.getElementById('reqPhone').value.trim();
-  const desc  = document.getElementById('reqDesc').value.trim();
-  const file  = document.getElementById('reqFile').files[0];
-  const btn   = document.querySelector('.form-submit');
-
-  if(!name){ alert('Пожалуйста, введите имя'); return; }
-  if(!phone){ alert('Пожалуйста, введите телефон'); return; }
-
-  btn.textContent = 'Отправляем...';
-  btn.disabled = true;
-
-  const fd = new FormData();
-  fd.append('action','atctelecom_form');
-  fd.append('name', name);
-  fd.append('phone', phone);
-  fd.append('desc', desc);
-  if(file) fd.append('file', file);
-
-  fetch('<?php echo esc_url(admin_url("admin-ajax.php")); ?>',{method:'POST',body:fd})
-    .then(r=>r.json())
-    .then(data=>{
-      if(data.success){
-        document.getElementById('formCard').style.display='none';
-        document.getElementById('formSuccess').style.display='block';
-      } else {
-        alert('Ошибка отправки. Пожалуйста, позвоните нам.');
-        btn.textContent='Отправить заявку →';
-        btn.disabled=false;
-      }
-    })
-    .catch(()=>{
-      alert('Ошибка соединения. Пожалуйста, позвоните нам.');
-      btn.textContent='Отправить заявку →';
-      btn.disabled=false;
-    });
-}
-
 /* Smooth scroll for anchor links */
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
   a.addEventListener('click',function(e){
-    const id = this.getAttribute('href').slice(1);
-    const el = document.getElementById(id);
-    if(el){
-      e.preventDefault();
-      const top = el.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({top, behavior:'smooth'});
-    }
+    var id=this.getAttribute('href').slice(1),el=document.getElementById(id);
+    if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-80,behavior:'smooth'});}
   });
 });
 </script>
