@@ -637,12 +637,12 @@ img{max-width:100%;display:block}
             <span class="risk-price accent">от 5 000 ₽</span>
           </div>
           <div class="risk-row">
-            <span class="risk-item">Восстановление данных с сервера</span>
-            <span class="risk-price">от 30 000 ₽</span>
+            <span class="risk-item">Простой серверной на рабочий день</span>
+            <span class="risk-price">потеря времени</span>
           </div>
           <div class="risk-row">
-            <span class="risk-item">Замена сгоревшего коммутатора</span>
-            <span class="risk-price">от 50 000 ₽</span>
+            <span class="risk-item">Новый ИБП вместо ремонта</span>
+            <span class="risk-price">в 3–5 раз дороже</span>
           </div>
         </div>
         <div class="risk-note">Цены на ремонт ИБП ориентировочные, точную стоимость называем после диагностики. Диагностика бесплатная.</div>
@@ -712,9 +712,10 @@ img{max-width:100%;display:block}
       <div class="proc-num">3</div>
       <div class="proc-title">Ремонт и выдача</div>
       <p class="proc-text">Чиним на компонентном уровне, тестируем под нагрузкой. Отдаём с гарантийным актом и полным пакетом документов.</p>
-      <span class="proc-tag">Гарантия 12 месяцев</span>
+      <span class="proc-tag">Гарантия от 6 месяцев*</span>
     </div>
   </div>
+  <p style="margin-top:24px;font-size:12px;color:var(--text3);line-height:1.6">* Гарантия от 6 месяцев при использовании запчастей нашего склада. На работы со сторонними компонентами — по договорённости.</p>
 </section>
 
 <!-- ============================================================
@@ -816,7 +817,7 @@ img{max-width:100%;display:block}
     <div class="svc-card reveal" data-delay="1">
       <div class="svc-card-icon">🔧</div>
       <div class="svc-card-title">Ремонт ИБП</div>
-      <p class="svc-card-text">Компонентный ремонт 1–250 кВт. APC, Eaton, Riello, Delta и другие. Выезд по СПб и Ленобласти. Гарантия 12 месяцев.</p>
+      <p class="svc-card-text">Компонентный ремонт 1–250 кВт. APC, Eaton, Riello, Delta и другие. Выезд по СПб и Ленобласти. Гарантия от 6 месяцев*.</p>
       <a href="<?php echo home_url('/repair/'); ?>" class="svc-card-link">Подробнее →</a>
     </div>
     <div class="svc-card reveal" data-delay="2">
@@ -922,7 +923,7 @@ img{max-width:100%;display:block}
         <span class="faq-icon">+</span>
       </div>
       <div class="faq-a"><div class="faq-a-inner">
-        Договор на выполнение работ, акт выполненных работ, гарантийный талон (12 месяцев на работы). Для юридических лиц — счёт и счёт-фактура. Работаем без НДС.
+        Договор на выполнение работ, акт выполненных работ, гарантийный талон (от 6 месяцев на работы при использовании наших запчастей). Для юридических лиц: счёт и счёт-фактура. Работаем без НДС.
       </div></div>
     </div>
 
