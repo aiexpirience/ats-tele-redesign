@@ -150,7 +150,7 @@ img{max-width:100%;display:block}
    ============================================================ */
 .hero{
   position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:0 var(--px);
-  background:#0A0F1C url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1800&q=80&auto=format&fit=crop') center/cover no-repeat;
+  background:#0A0F1C url('<?php echo get_template_directory_uri(); ?>/hero-bg.jpg') center/cover no-repeat;
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
