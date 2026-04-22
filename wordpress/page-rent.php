@@ -387,6 +387,7 @@
         <div class="page-hero-btns">
           <a href="tel:+79046490909" class="btn btn-lg" style="background:white;color:var(--accent);font-weight:800">📞 Позвонить</a>
           <a href="https://t.me/atstelecom" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background:white;color:var(--accent);font-weight:800"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          <button class="btn btn-lg" onclick="toggleRentForm()" id="rentFormBtn" style="background:var(--accent);color:white;font-weight:800;border:none;cursor:pointer">✏️ Оставить заявку</button>
         </div>
       </div>
       <div class="page-hero-stats">
@@ -405,6 +406,107 @@
       </div>
     </div>
   </div>
+
+  <!-- ФОРМА ЗАЯВКИ НА АРЕНДУ (скрытая) -->
+  <div id="rentFormWrap" style="display:none;background:var(--card2);border-bottom:1px solid var(--border)">
+    <div style="max-width:var(--max-w);margin:0 auto;padding:40px 32px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+        <div>
+          <div class="accent-bar"></div>
+          <h2 style="font-family:'Inter',sans-serif;font-size:clamp(20px,3vw,32px);font-weight:800;color:var(--text);margin-bottom:12px">ЗАЯВКА НА АРЕНДУ</h2>
+          <p style="font-size:14px;line-height:1.8;color:var(--text2);margin-bottom:20px">Укажите мощность и срок — подберём ИБП из нашего подменного фонда и доставим.</p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">⚡</div>
+              <div style="font-size:13px;color:var(--text2)">Подменный фонд 20+ ИБП от 1 до 250 кВт — выдаём в день обращения</div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">🚚</div>
+              <div style="font-size:13px;color:var(--text2)">Доставка и подключение по СПб и ЛО — входит в стоимость</div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">📋</div>
+              <div style="font-size:13px;color:var(--text2)">Договор аренды, все закрывающие документы для юрлиц</div>
+            </div>
+          </div>
+        </div>
+        <div id="rentForm">
+          <div style="background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <label style="font-size:12px;font-weight:700;color:var(--text2)">ФИО *</label>
+                <input class="req-input" id="rnName" type="text" placeholder="Иван Иванов">
+              </div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <label style="font-size:12px;font-weight:700;color:var(--text2)">Телефон *</label>
+                <input class="req-input" id="rnPhone" type="tel" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Компания</label>
+              <input class="req-input" id="rnCompany" type="text" placeholder="ООО &quot;Ваша компания&quot;">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Мощность / тип оборудования *</label>
+              <input class="req-input" id="rnModel" type="text" placeholder="10 кВА, трёхфазный">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Срок аренды</label>
+              <input class="req-input" id="rnPeriod" type="text" placeholder="2 недели, 1 месяц...">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Дополнительная информация</label>
+              <textarea class="req-input req-textarea" id="rnDesc" style="min-height:70px" placeholder="Адрес объекта, особые требования..."></textarea>
+            </div>
+            <div style="font-size:11.5px;color:var(--text3)">* — обязательные поля</div>
+            <button class="btn btn-lg" style="background:var(--accent);color:white;border:none;cursor:pointer;width:100%;justify-content:center" onclick="submitRentForm()">Отправить заявку →</button>
+          </div>
+        </div>
+        <div id="rentSuccess" style="display:none;background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:40px 24px;text-align:center">
+          <div style="font-size:48px;margin-bottom:12px">✅</div>
+          <h3 style="font-family:'Inter',sans-serif;font-size:18px;margin-bottom:10px;color:var(--text)">Заявка принята!</h3>
+          <p style="color:var(--text2);font-size:13.5px;line-height:1.7">Получили вашу заявку на аренду. Перезвоним и подберём подходящий ИБП из нашего фонда.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function toggleRentForm(){
+    var w=document.getElementById('rentFormWrap');
+    var btn=document.getElementById('rentFormBtn');
+    var open=w.style.display==='none';
+    w.style.display=open?'block':'none';
+    if(btn) btn.textContent=open?'✕ Закрыть':'✏️ Оставить заявку';
+    if(open) w.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function submitRentForm(){
+    var name=document.getElementById('rnName');
+    var phone=document.getElementById('rnPhone');
+    var model=document.getElementById('rnModel');
+    var valid=true;
+    [name,phone,model].forEach(function(f){f.classList.remove('error');if(!f.value.trim()){f.classList.add('error');valid=false;}});
+    if(!valid){return;}
+    var fd=new FormData();
+    fd.append('action','atctelecom_request');
+    fd.append('type','rent');
+    fd.append('name',name.value.trim());
+    fd.append('phone',phone.value.trim());
+    fd.append('company',document.getElementById('rnCompany').value.trim());
+    fd.append('model',model.value.trim());
+    fd.append('period',document.getElementById('rnPeriod').value.trim());
+    fd.append('desc',document.getElementById('rnDesc').value.trim());
+    fetch(atcAjaxUrl,{method:'POST',body:fd})
+      .then(function(){
+        document.getElementById('rentForm').style.display='none';
+        document.getElementById('rentSuccess').style.display='block';
+      }).catch(function(){
+        document.getElementById('rentForm').style.display='none';
+        document.getElementById('rentSuccess').style.display='block';
+      });
+  }
+  </script>
+
 
 <section class="section">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">

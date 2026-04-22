@@ -105,3 +105,47 @@ add_filter('document_title_parts', 'atctelecom_document_title_parts');
 add_filter('use_block_editor_for_post_type', function($use, $post_type) {
     return $post_type !== 'page' ? $use : false;
 }, 10, 2);
+
+// ============================================================
+// AJAX-обработчик расширенных заявок (ремонт, аренда)
+// ============================================================
+function atctelecom_handle_request() {
+    $type    = sanitize_text_field($_POST['type']    ?? 'request');
+    $name    = sanitize_text_field($_POST['name']    ?? '');
+    $phone   = sanitize_text_field($_POST['phone']   ?? '');
+    $company = sanitize_text_field($_POST['company'] ?? '');
+    $model   = sanitize_text_field($_POST['model']   ?? '');
+    $period  = sanitize_text_field($_POST['period']  ?? '');
+    $desc    = sanitize_textarea_field($_POST['desc'] ?? '');
+
+    if (empty($name) || empty($phone)) {
+        wp_send_json_error(['message' => 'Заполните обязательные поля'], 400);
+    }
+
+    $labels = [
+        'repair' => '🔧 Заявка на РЕМОНТ ИБП',
+        'rent'   => '🔌 Заявка на АРЕНДУ ИБП',
+    ];
+    $subject = $labels[$type] ?? 'Новая заявка с сайта АТС ТЕЛЕКОМ';
+
+    $body  = "=== {$subject} ===\n\n";
+    $body .= "Имя: {$name}\nТелефон: {$phone}\n";
+    if ($company) $body .= "Компания: {$company}\n";
+    if ($model)   $body .= "Марка/модель: {$model}\n";
+    if ($period)  $body .= "Срок: {$period}\n";
+    if ($desc)    $body .= "\nКомментарий:\n{$desc}\n";
+
+    $to      = get_option('admin_email');
+    $headers = ['Content-Type: text/plain; charset=UTF-8'];
+
+    if (!empty($_FILES['file']['tmp_name'])) {
+        wp_mail($to, $subject, $body, $headers, [$_FILES['file']['tmp_name']]);
+    } else {
+        wp_mail($to, $subject, $body, $headers);
+    }
+
+    wp_send_json_success(['message' => 'Заявка принята']);
+}
+add_action('wp_ajax_atctelecom_request',        'atctelecom_handle_request');
+add_action('wp_ajax_nopriv_atctelecom_request', 'atctelecom_handle_request');
+

@@ -423,6 +423,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
         <div class="repair-hero-btns">
           <a href="tel:+79046490909" class="btn btn-lg" style="background:white;color:var(--accent);font-weight:800">📞 Позвонить</a>
           <a href="https://t.me/atstelecom" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background:white;color:var(--accent);font-weight:800"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          <button class="btn btn-lg" onclick="toggleRepairForm()" id="repairFormBtn" style="background:var(--accent);color:white;font-weight:800;border:none;cursor:pointer">✏️ Оставить заявку</button>
         </div>
       </div>
       <div class="repair-hero-stats">
@@ -432,6 +433,118 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
       </div>
     </div>
   </div>
+
+  <!-- ФОРМА ЗАЯВКИ НА РЕМОНТ (скрытая) -->
+  <div id="repairFormWrap" style="display:none;background:var(--card2);border-bottom:1px solid var(--border)">
+    <div style="max-width:var(--max-w);margin:0 auto;padding:40px 32px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+        <div>
+          <div class="accent-bar"></div>
+          <h2 style="font-family:'Inter',sans-serif;font-size:clamp(20px,3vw,32px);font-weight:800;color:var(--text);margin-bottom:12px">ЗАЯВКА НА РЕМОНТ</h2>
+          <p style="font-size:14px;line-height:1.8;color:var(--text2);margin-bottom:20px">Опишите неисправность и укажите модель ИБП — перезвоним и назовём стоимость.</p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">⚡</div>
+              <div style="font-size:13px;color:var(--text2)">Диагностика бесплатно — озвучиваем цену до начала ремонта</div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">🔄</div>
+              <div style="font-size:13px;color:var(--text2)">Подменный ИБП на время ремонта — бесплатно из нашего фонда</div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:7px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">📋</div>
+              <div style="font-size:13px;color:var(--text2)">Для юрлиц — договор, акт выполненных работ, счёт-фактура</div>
+            </div>
+          </div>
+        </div>
+        <div id="repairForm">
+          <div style="background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <label style="font-size:12px;font-weight:700;color:var(--text2)">ФИО *</label>
+                <input class="req-input" id="rfName" type="text" placeholder="Иван Иванов">
+              </div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <label style="font-size:12px;font-weight:700;color:var(--text2)">Телефон *</label>
+                <input class="req-input" id="rfPhone" type="tel" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Компания</label>
+              <input class="req-input" id="rfCompany" type="text" placeholder="ООО &quot;Ваша компания&quot;">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Марка и модель ИБП *</label>
+              <input class="req-input" id="rfModel" type="text" placeholder="APC Smart-UPS 1500">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Описание проблемы</label>
+              <textarea class="req-input req-textarea" id="rfDesc" style="min-height:80px" placeholder="Пищит, не включается, не заряжает батарею..."></textarea>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <label style="font-size:12px;font-weight:700;color:var(--text2)">Фото ИБП (необязательно)</label>
+              <label class="req-file-label" id="rfFileLabel">
+                <input type="file" id="rfFile" accept="image/*" style="display:none" onchange="handleRepairFile(this)">
+                <span>📷</span>
+                <span id="rfFileText" style="font-size:13px;color:var(--text3);font-weight:600">Выбрать фото</span>
+              </label>
+            </div>
+            <div style="font-size:11.5px;color:var(--text3)">* — обязательные поля</div>
+            <button class="btn btn-lg" style="background:var(--accent);color:white;border:none;cursor:pointer;width:100%;justify-content:center" onclick="submitRepairForm()">Отправить заявку →</button>
+          </div>
+        </div>
+        <div id="repairSuccess" style="display:none;background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:40px 24px;text-align:center">
+          <div style="font-size:48px;margin-bottom:12px">✅</div>
+          <h3 style="font-family:'Inter',sans-serif;font-size:18px;margin-bottom:10px;color:var(--text)">Заявка принята!</h3>
+          <p style="color:var(--text2);font-size:13.5px;line-height:1.7">Получили вашу заявку на ремонт. Перезвоним в течение 30 минут в рабочее время.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function toggleRepairForm(){
+    var w=document.getElementById('repairFormWrap');
+    var btn=document.getElementById('repairFormBtn');
+    var open=w.style.display==='none';
+    w.style.display=open?'block':'none';
+    if(btn) btn.textContent=open?'✕ Закрыть':'✏️ Оставить заявку';
+    if(open) w.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function handleRepairFile(input){
+    if(input.files&&input.files[0]){
+      document.getElementById('rfFileText').textContent=input.files[0].name;
+      document.getElementById('rfFileLabel').style.borderColor='var(--accent)';
+    }
+  }
+  function submitRepairForm(){
+    var name=document.getElementById('rfName');
+    var phone=document.getElementById('rfPhone');
+    var model=document.getElementById('rfModel');
+    var valid=true;
+    [name,phone,model].forEach(function(f){f.classList.remove('error');if(!f.value.trim()){f.classList.add('error');valid=false;}});
+    if(!valid){return;}
+    var fd=new FormData();
+    fd.append('action','atctelecom_request');
+    fd.append('type','repair');
+    fd.append('name',name.value.trim());
+    fd.append('phone',phone.value.trim());
+    fd.append('company',document.getElementById('rfCompany').value.trim());
+    fd.append('model',model.value.trim());
+    fd.append('desc',document.getElementById('rfDesc').value.trim());
+    var file=document.getElementById('rfFile');
+    if(file.files&&file.files[0])fd.append('file',file.files[0]);
+    fetch(atcAjaxUrl,{method:'POST',body:fd})
+      .then(function(){
+        document.getElementById('repairForm').style.display='none';
+        document.getElementById('repairSuccess').style.display='block';
+      }).catch(function(){
+        document.getElementById('repairForm').style.display='none';
+        document.getElementById('repairSuccess').style.display='block';
+      });
+  }
+  </script>
+
 
   <!-- РЕМОНТ ПО БРЕНДАМ -- ТАБЫ -->
   <section class="section">
