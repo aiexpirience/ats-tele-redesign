@@ -76,6 +76,8 @@ img{max-width:100%;display:block}
   --border2:rgba(0,0,0,.14);
   --shadow:0 4px 20px rgba(0,0,0,.07),0 1px 4px rgba(0,0,0,.04);
   --shadow-lg:0 20px 60px rgba(0,0,0,.12),0 6px 20px rgba(0,0,0,.06);
+  --dark:#0A0F1C;
+  --dark2:#111827;
   --radius:14px;
   --radius-lg:20px;
   --nav-h:72px;
