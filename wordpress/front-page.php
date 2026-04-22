@@ -65,8 +65,6 @@ img{max-width:100%;display:block}
 :root{
   --bg:#F8F7F4;
   --bg-alt:#FFFFFF;
-  --dark:#0A0F1C;
-  --dark2:#111827;
   --accent:#1565C0;
   --accent-h:#0D47A1;
   --accent-bg:rgba(21,101,192,.09);
@@ -87,8 +85,6 @@ img{max-width:100%;display:block}
 [data-theme="dark"] {
   --bg:#121212;
   --bg-alt:#1a1a1a;
-  --dark:#e8e8f2;
-  --dark2:#ccccdd;
   --text:#e8e8f2;
   --text2:#b0b0c0;
   --text3:#6b6b7a;
@@ -143,6 +139,7 @@ img{max-width:100%;display:block}
 .btn-secondary{background:transparent;color:var(--text2);border:1.5px solid var(--border2)}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
 .btn-white{background:var(--bg-alt);color:var(--dark)}
+[data-theme="dark"] .btn-white{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)}
 .btn-white:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.2)}
 .btn-outline-light{background:transparent;color:rgba(255,255,255,.75);border:1.5px solid rgba(255,255,255,.22)}
 .btn-outline-light:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
