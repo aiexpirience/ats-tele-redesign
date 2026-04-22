@@ -40,7 +40,7 @@
       <div class="footer-col"><h4>Контакты</h4><ul>
         <li><a href="tel:+79046490909">+7 (904) 649-09-09</a></li>
         <li><a href="mailto:atstelecomspb@yandex.ru">atstelecomspb@yandex.ru</a></li>
-        <li><a href="#">Пн–Сб: 10:00–20:00</a></li>
+        <li>Пн–Сб: 10:00–20:00</li>
         <li><a href="<?php echo home_url("/contacts/"); ?>">Санкт-Петербург</a></li>
       
     </ul></div>
