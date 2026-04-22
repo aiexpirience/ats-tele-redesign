@@ -503,6 +503,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
   </div>
 
   <script>
+  
+  function openRepairForm(){
+    window.scrollTo({top:0,behavior:'smooth'});
+    setTimeout(function(){
+      var w=document.getElementById('repairFormWrap');
+      if(w&&w.style.display==='none') toggleRepairForm();
+    },400);
+  }
   function toggleRepairForm(){
     var w=document.getElementById('repairFormWrap');
     var btn=document.getElementById('repairFormBtn');
@@ -872,20 +880,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
 
   <!-- REPAIR REQUEST MODAL -->
   <div id="repairModal" class="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:2000;padding:20px;overflow-y:auto;align-items:flex-start;justify-content:center">
-    <div style="background:var(--bg);border-radius:20px;max-width:500px;margin:40px auto;padding:32px;border:1px solid var(--border)">
-      <h2 style="font-size:24px;font-weight:800;color:var(--text);margin-bottom:8px">Оставить заявку на ремонт</h2>
-      <p style="color:var(--text2);font-size:14px;margin-bottom:24px">Расскажите о проблеме - мы свяжемся и определим стоимость</p>
-      <form onsubmit="submitRepairForm(event)">
-        <input type="text" placeholder="Ваше имя" style="width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;margin-bottom:12px;background:var(--card2);color:var(--text);font-family:Inter,sans-serif" required>
-        <input type="tel" placeholder="+7 (___) ___-__-__" style="width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;margin-bottom:12px;background:var(--card2);color:var(--text);font-family:Inter,sans-serif" required>
-        <input type="email" placeholder="Email" style="width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;margin-bottom:12px;background:var(--card2);color:var(--text);font-family:Inter,sans-serif" required>
-        <textarea placeholder="Описание проблемы (модель ИБП, что сломалось, когда это произошло)" style="width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;margin-bottom:20px;background:var(--card2);color:var(--text);font-family:Inter,sans-serif;resize:vertical;min-height:100px" required></textarea>
-        <div style="display:flex;gap:12px">
-          <button type="submit" class="btn btn-primary btn-lg" style="flex:1">Отправить</button>
-          <button type="button" class="btn" style="flex:1;background:var(--card2);color:var(--text);border:1.5px solid var(--border)" onclick="closeRepairForm()">Отмена</button>
-        </div>
-      </form>
-    </div>
+    
   </div>
 
 </div>
