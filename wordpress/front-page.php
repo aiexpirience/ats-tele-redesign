@@ -68,7 +68,7 @@
    ============================================================ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Inter',sans-serif;background:#F8F7F4;color:#0D0F14;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
@@ -96,6 +96,22 @@ img{max-width:100%;display:block}
   --nav-h:72px;
   --max:1240px;
   --px:40px;
+}
+[data-theme="dark"] {
+  --bg:#121212;
+  --bg-alt:#1a1a1a;
+  --dark:#e8e8f2;
+  --dark2:#ccccdd;
+  --text:#e8e8f2;
+  --text2:#b0b0c0;
+  --text3:#6b6b7a;
+  --border:rgba(255,255,255,.08);
+  --border2:rgba(255,255,255,.14);
+  --accent-bg:rgba(21,101,192,.18);
+  --accent-bd:rgba(21,101,192,.35);
+  --shadow:0 4px 20px rgba(0,0,0,.4),0 1px 4px rgba(0,0,0,.25);
+  --shadow-lg:0 20px 60px rgba(0,0,0,.5),0 6px 20px rgba(0,0,0,.3);
+  color-scheme:dark
 }
 @media(max-width:768px){:root{--px:20px;--nav-h:64px}}
 
@@ -139,7 +155,7 @@ img{max-width:100%;display:block}
 .btn-primary:hover{background:var(--accent-h);transform:translateY(-2px);box-shadow:0 10px 28px rgba(21,101,192,.38)}
 .btn-secondary{background:transparent;color:var(--text2);border:1.5px solid var(--border2)}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
-.btn-white{background:#fff;color:var(--dark)}
+.btn-white{background:var(--bg-alt);color:var(--dark)}
 .btn-white:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.2)}
 .btn-outline-light{background:transparent;color:rgba(255,255,255,.75);border:1.5px solid rgba(255,255,255,.22)}
 .btn-outline-light:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
@@ -198,7 +214,7 @@ img{max-width:100%;display:block}
 /* ============================================================
    TRUST STRIP
    ============================================================ */
-.trust-strip{background:#fff;border-bottom:1px solid var(--border);padding:20px var(--px)}
+.trust-strip{background:var(--bg-alt);border-bottom:1px solid var(--border);padding:20px var(--px)}
 .trust-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .trust-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);white-space:nowrap;flex-shrink:0}
 .trust-divider{width:1px;height:20px;background:var(--border2);flex-shrink:0}
@@ -212,12 +228,12 @@ img{max-width:100%;display:block}
    ============================================================ */
 .symptoms-section{background:var(--bg)}
 .symptoms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:40px 0 32px}
-.symptom-card{padding:22px;background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);display:flex;align-items:flex-start;gap:14px;transition:all .25s;cursor:default}
+.symptom-card{padding:22px;background:var(--bg-alt);border:1.5px solid var(--border);border-radius:var(--radius);display:flex;align-items:flex-start;gap:14px;transition:all .25s;cursor:default}
 .symptom-card:hover{border-color:var(--accent-bd);box-shadow:var(--shadow);transform:translateY(-3px)}
 .symptom-icon{font-size:24px;flex-shrink:0;margin-top:1px}
 .symptom-text{font-size:14.5px;font-weight:600;color:var(--text);line-height:1.5}
 .symptom-sub{font-size:12.5px;color:var(--text3);margin-top:4px;line-height:1.5}
-.symptoms-note{font-size:16px;color:var(--text2);line-height:1.7;margin-bottom:28px;padding:20px 24px;background:#fff;border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;max-width:640px}
+.symptoms-note{font-size:16px;color:var(--text2);line-height:1.7;margin-bottom:28px;padding:20px 24px;background:var(--bg-alt);border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;max-width:640px}
 
 /* ============================================================
    RISK SECTION (dark)
@@ -265,7 +281,7 @@ img{max-width:100%;display:block}
 .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:52px;position:relative}
 .process-grid::before{content:'';position:absolute;top:44px;left:calc(100%/6);right:calc(100%/6);height:1px;background:linear-gradient(90deg,transparent,var(--accent-bd),transparent)}
 .proc{padding:0 28px;text-align:center}
-.proc-num{width:88px;height:88px;border-radius:50%;background:#fff;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;font-weight:800;color:var(--text3);position:relative;z-index:1;transition:all .3s}
+.proc-num{width:88px;height:88px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;font-weight:800;color:var(--text3);position:relative;z-index:1;transition:all .3s}
 .proc:hover .proc-num{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 8px 24px rgba(21,101,192,.3)}
 .proc-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:12px}
 .proc-text{font-size:13.5px;color:var(--text3);line-height:1.7}
@@ -300,11 +316,11 @@ img{max-width:100%;display:block}
 .form-perks{display:flex;flex-direction:column;gap:12px}
 .fperk{display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(255,255,255,.55)}
 .fperk::before{content:'✓';color:#4ade80;font-size:15px;font-weight:800;flex-shrink:0}
-.form-card{background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:0 24px 64px rgba(0,0,0,.3)}
+.form-card{background:var(--bg-alt);border-radius:var(--radius-lg);padding:36px;box-shadow:0 24px 64px rgba(0,0,0,.3)}
 .form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
 .form-label{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:.8px;text-transform:uppercase}
 .form-input{padding:13px 16px;background:var(--bg);border:1.5px solid var(--border2);border-radius:10px;font-size:14.5px;font-family:'Inter',sans-serif;color:var(--text);transition:border-color .2s,box-shadow .2s;outline:none;width:100%}
-.form-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-bg)}
+.form-input:focus{border-color:var(--accent);background:var(--bg-alt);box-shadow:0 0 0 3px var(--accent-bg)}
 .form-input::placeholder{color:var(--text3)}
 .form-textarea{resize:vertical;min-height:100px;line-height:1.6}
 .form-file-label{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--bg);border:1.5px dashed var(--border2);border-radius:10px;cursor:pointer;transition:all .2s;font-size:13.5px;color:var(--text3)}
@@ -321,7 +337,7 @@ img{max-width:100%;display:block}
    ============================================================ */
 .services-section{background:var(--bg)}
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
-.svc-card{padding:26px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition:all .28s;display:flex;flex-direction:column}
+.svc-card{padding:26px;background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);transition:all .28s;display:flex;flex-direction:column}
 .svc-card:hover{border-color:var(--accent-bd);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
 .svc-card-icon{font-size:28px;margin-bottom:14px}
 .svc-card-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px}
@@ -332,7 +348,7 @@ img{max-width:100%;display:block}
 /* ============================================================
    BRANDS
    ============================================================ */
-.brands-section{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:44px var(--px)}
+.brands-section{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:44px var(--px)}
 .brands-inner{max-width:var(--max);margin:0 auto}
 .brands-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
 .brands-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text3);white-space:nowrap}
@@ -347,7 +363,7 @@ img{max-width:100%;display:block}
    ============================================================ */
 .faq-section{background:var(--bg)}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:44px;align-items:start}
-.faq-item{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
+.faq-item{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
 .faq-item.open{border-color:var(--accent-bd)}
 .faq-q{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 22px;cursor:pointer;font-size:15px;font-weight:600;color:var(--text);line-height:1.45;user-select:none}
 .faq-q:hover{color:var(--accent)}
@@ -977,7 +993,6 @@ img{max-width:100%;display:block}
       <a href="tel:+79046490909" class="btn btn-outline-light btn-lg">📞 Позвонить</a>
       <a href="https://t.me/atstelecom" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-        Telegram
       </a>
     </div>
   </div>
