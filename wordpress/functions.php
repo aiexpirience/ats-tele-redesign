@@ -114,9 +114,13 @@ function atctelecom_handle_request() {
     $name    = sanitize_text_field($_POST['name']    ?? '');
     $phone   = sanitize_text_field($_POST['phone']   ?? '');
     $company = sanitize_text_field($_POST['company'] ?? '');
-    $model   = sanitize_text_field($_POST['model']   ?? '');
-    $period  = sanitize_text_field($_POST['period']  ?? '');
-    $desc    = sanitize_textarea_field($_POST['desc'] ?? '');
+    $model    = sanitize_text_field($_POST['model']    ?? '');
+    $period   = sanitize_text_field($_POST['period']   ?? '');
+    $goods    = sanitize_text_field($_POST['goods']    ?? '');
+    $qty      = sanitize_text_field($_POST['qty']      ?? '');
+    $deadline = sanitize_text_field($_POST['deadline'] ?? '');
+    $email    = sanitize_email($_POST['email']         ?? '');
+    $desc     = sanitize_textarea_field($_POST['desc'] ?? '');
 
     if (empty($name) || empty($phone)) {
         wp_send_json_error(['message' => 'Заполните обязательные поля'], 400);
@@ -125,15 +129,20 @@ function atctelecom_handle_request() {
     $labels = [
         'repair' => '🔧 Заявка на РЕМОНТ ИБП',
         'rent'   => '🔌 Заявка на АРЕНДУ ИБП',
+        'shop'   => '🛒 Запрос на ПОСТАВКУ ИБП',
     ];
     $subject = $labels[$type] ?? 'Новая заявка с сайта АТС ТЕЛЕКОМ';
 
     $body  = "=== {$subject} ===\n\n";
     $body .= "Имя: {$name}\nТелефон: {$phone}\n";
-    if ($company) $body .= "Компания: {$company}\n";
-    if ($model)   $body .= "Марка/модель: {$model}\n";
-    if ($period)  $body .= "Срок: {$period}\n";
-    if ($desc)    $body .= "\nКомментарий:\n{$desc}\n";
+    if ($email)    $body .= "Email: {$email}\n";
+    if ($company)  $body .= "Компания: {$company}\n";
+    if ($model)    $body .= "Марка/модель: {$model}\n";
+    if ($goods)    $body .= "Оборудование: {$goods}\n";
+    if ($qty)      $body .= "Количество: {$qty}\n";
+    if ($deadline) $body .= "Срок поставки: {$deadline}\n";
+    if ($period)   $body .= "Срок: {$period}\n";
+    if ($desc)     $body .= "\nКомментарий:\n{$desc}\n";
 
     $to      = get_option('admin_email');
     $headers = ['Content-Type: text/plain; charset=UTF-8'];

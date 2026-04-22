@@ -630,7 +630,7 @@ function submitShopForm(){
   var file=document.getElementById('sfFile');
   if(file.files&&file.files[0])fd.append('file',file.files[0]);
   // Send to mail.php
-  fetch('mail_shop.php',{method:'POST',body:fd})
+  fd.append('action','atctelecom_request');fd.append('type','shop');fetch(atcAjaxUrl,{method:'POST',body:fd})
    .then(function(r){return r.json()})
    .then(function(d){
       document.getElementById('shopForm').style.display='none';
