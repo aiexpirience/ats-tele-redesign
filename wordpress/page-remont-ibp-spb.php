@@ -84,9 +84,7 @@ a{color:inherit;text-decoration:none}
 .btn-ghost{padding:14px 28px;border-radius:12px;background:transparent;border:1.5px solid var(--border2);color:var(--text2);font-size:14px;font-weight:600;transition:all.25s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;white-space:nowrap}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg);transform:translateY(-2px)}
 
-
 .hstat:hover{background:var(--surface2)}
-
 
 .hero-services{display:flex;flex-direction:column;gap:8px}
 .svc-link{display:flex;align-items:center;gap:14px;padding:15px 18px;background:var(--surface);border:1px solid var(--border);border-radius:14px;transition:all.22s;position:relative;overflow:hidden}
@@ -185,28 +183,8 @@ a{color:inherit;text-decoration:none}
 .brand-pill.featured{border-color:var(--accent-bd);color:var(--accent);background:var(--accent-bg);font-weight:700}
 
 /* FOOTER */
-.footer{background:var(--navy);padding:64px 32px 28px;border-top:1px solid rgba(34,158,217,.2)}
-[data-theme="dark"] .footer{background:var(--surface)}
-.footer-inner{max-width:var(--max-w);margin:0 auto}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:20px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:24px}
-[data-theme="dark"] .footer-top{border-bottom-color:var(--border)}
-.footer-brand{font-family:'Inter',sans-serif;font-size:13px;font-weight:800;color:white;line-height:1.2}
-[data-theme="dark"] .footer-brand{color:var(--text)}
-.footer-brand span{color:var(--accent);display:block;font-size:10.5px;font-weight:500;margin-top:3px;letter-spacing:.5px}
-.footer-desc{font-size:13px;line-height:1.7;color:rgba(255,255,255,.4);margin:14px 0 20px;max-width:260px}
-[data-theme="dark"] .footer-desc{color:var(--text3)}
-.footer-socials{display:flex;gap:8px}
-.footer-social{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all.2s;border:1px solid rgba(255,255,255,.1)}
-[data-theme="dark"] .footer-social{border-color:var(--border)}
+
 .footer-social:hover{border-color:var(--accent);background:var(--accent-bg)}
-.footer-col h4{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
-[data-theme="dark"] .footer-col h4{color:var(--text3)}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-.footer-col a{font-size:13px;color:rgba(255,255,255,.45);transition:color.15s}
-[data-theme="dark"] .footer-col a{color:var(--text3)}
-.footer-col a:hover{color:var(--accent)}
-.footer-bottom{display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.22)}
-[data-theme="dark"] .footer-bottom{color:var(--text3)}
 
 /* FLOAT */
 .float-wrap{position:fixed;bottom:28px;right:28px;z-index:800;display:flex;flex-direction:column;gap:10px}
@@ -226,7 +204,7 @@ a{color:inherit;text-decoration:none}
  .form-inner{grid-template-columns:1fr;gap:20px}
  .process-wrap{grid-template-columns:1fr;gap:32px}.process-wrap::before{display:none}
  .cta-inner{flex-direction:column;text-align:center}.cta-actions{flex-direction:row;justify-content:center;flex-wrap:wrap}
- .footer-top{grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:20px}
+ 
  .nav-links{display:none}.nav-phone-btn{display:none}.nav-tg-btn{display:none}.burger{display:flex}
 }
 @media(max-width:600px){
@@ -234,7 +212,7 @@ a{color:inherit;text-decoration:none}
  .hero{padding:0 20px}.hero-h1{font-size:clamp(36px,10vw,52px);letter-spacing:-1.5px}
  .adv-grid{grid-template-columns:1fr}
  .section{padding:64px 20px}.form-inner{padding:56px 20px}.cta-inner{padding:64px 20px}
- .footer-top{grid-template-columns:1fr;gap:24px}.footer-bottom{flex-direction:column;gap:6px}
+ 
  .nav-inner{padding:0 16px}.brands-section{padding:28px 20px}
  
  .hero-btns.btn-gold,.hero-btns.btn-ghost{width:100%;justify-content:center}
@@ -461,7 +439,6 @@ a{color:inherit;text-decoration:none}
   .page-hero-stats{display:none}
 }
 
-
 </style>
 </div>
 <!-- HERO -->
@@ -589,7 +566,5 @@ a{color:inherit;text-decoration:none}
   </section>
 
 </div>
-
-
 
 <?php get_footer(); ?>
