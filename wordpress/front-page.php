@@ -154,7 +154,7 @@ img{max-width:100%;display:block}
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
-  background:linear-gradient(135deg,rgba(10,15,28,.82) 0%,rgba(10,15,28,.60) 50%,rgba(10,15,28,.50) 100%);
+  background:linear-gradient(135deg,rgba(10,15,28,.92) 0%,rgba(10,15,28,.88) 50%,rgba(10,15,28,.84) 100%);
 }
 .hero-noise{position:absolute;inset:0;z-index:1;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero-glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(21,101,192,.18) 0%,transparent 70%);top:-200px;right:-150px;pointer-events:none;z-index:1}
@@ -168,8 +168,8 @@ img{max-width:100%;display:block}
 
 .hero-h1{font-size:clamp(40px,5.5vw,72px);font-weight:800;line-height:1.0;letter-spacing:-2px;color:#fff;margin-bottom:20px}
 .hero-h1 em{font-style:normal;color:#4A9EE0}
-.hero-sub{font-size:17px;line-height:1.75;color:rgba(255,255,255,.6);max-width:500px;margin-bottom:14px}
-.hero-promise{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.45);margin-bottom:36px}
+.hero-sub{font-size:17px;line-height:1.75;color:rgba(255,255,255,.80);max-width:500px;margin-bottom:14px}
+.hero-promise{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.65);margin-bottom:36px}
 .hero-promise::before{content:'✓';color:#4ade80;font-weight:700}
 
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px}
@@ -182,14 +182,14 @@ img{max-width:100%;display:block}
 
 /* Hero right — service links */
 .hero-links{display:flex;flex-direction:column;gap:10px}
-.hlink{display:flex;align-items:center;gap:14px;padding:16px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);transition:all .22s;position:relative;overflow:hidden}
+.hlink{display:flex;align-items:center;gap:14px;padding:16px 18px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);transition:all .22s;position:relative;overflow:hidden}
 .hlink::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);transform:scaleY(0);transition:transform .25s;transform-origin:bottom;border-radius:0 2px 2px 0}
 .hlink:hover{background:rgba(21,101,192,.12);border-color:rgba(21,101,192,.3);transform:translateX(4px)}
 .hlink:hover::before{transform:scaleY(1)}
 .hlink-icon{width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .hlink-name{font-size:13.5px;font-weight:700;color:#fff}
-.hlink-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:2px}
-.hlink-arr{margin-left:auto;color:rgba(255,255,255,.3);font-size:16px;transition:all .2s}
+.hlink-sub{font-size:12px;color:rgba(255,255,255,.60);margin-top:2px}
+.hlink-arr{margin-left:auto;color:rgba(255,255,255,.55);font-size:16px;transition:all .2s}
 .hlink:hover .hlink-arr{color:#4A9EE0;transform:translateX(3px)}
 
 .hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.3);font-size:11px;letter-spacing:1px;text-transform:uppercase;animation:scrollBob 2.5s ease-in-out infinite}
