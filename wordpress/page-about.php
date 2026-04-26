@@ -141,7 +141,7 @@
   flex-direction:column;
   gap:2px;
   box-shadow:0 12px 40px rgba(0,0,0,.18);
-  max-height:calc(100vh -- var(--nav-h));
+  max-height:calc(100vh - var(--nav-h));
   overflow-y:auto;
 }
 .mobile-nav.open{display:flex}
@@ -361,30 +361,21 @@
 <section class="section">
   <div class="section-hd"><div class="accent-bar"></div><p class="eyebrow">Доверие</p><h2 class="display" style="font-size:clamp(22px,3vw,42px);margin-bottom:12px">НАШИ КЛИЕНТЫ</h2><p class="lead" style="font-size:15px">Нам доверяют как крупные государственные организации, так и предприятия малого и среднего бизнеса.</p></div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
-    <a href="https://tesin.ru/" target="_blank" rel="noopener noreferrer" class="card" style="text-align:center;text-decoration:none;padding:28px 20px">
-      <div style="font-size:28px;margin-bottom:12px">🏢</div>
-      <div style="font-weight:800;font-size:14px;color:var(--text);margin-bottom:4px">ТезИн</div>
-      <div style="font-size:12px;color:var(--accent)">tesin.ru</div>
+    <a href="https://tesin.ru/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;height:160px;padding:24px;background:#fff;border-radius:16px;text-decoration:none;transition:opacity .2s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/clients/tesin.png" alt="ТезИн" style="width:100%;height:100%;object-fit:contain">
     </a>
-    <a href="https://i-core.ru/ru/" target="_blank" rel="noopener noreferrer" class="card" style="text-align:center;text-decoration:none;padding:28px 20px">
-      <div style="font-size:28px;margin-bottom:12px">💻</div>
-      <div style="font-weight:800;font-size:14px;color:var(--text);margin-bottom:4px">i-core</div>
-      <div style="font-size:12px;color:var(--accent)">i-core.ru</div>
+    <a href="https://i-core.ru/ru/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;height:160px;padding:24px;background:#fff;border-radius:16px;text-decoration:none;transition:opacity .2s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/clients/icore.png" alt="i-core" style="width:100%;height:100%;object-fit:contain">
     </a>
-    <div class="card" style="text-align:center;padding:28px 20px">
-      <div style="font-size:28px;margin-bottom:12px">🏛️</div>
-      <div style="font-weight:800;font-size:14px;color:var(--text);margin-bottom:4px">ТФОМС Челябинской области</div>
-      <div style="font-size:12px;color:var(--text3)">Территориальный фонд ОМС</div>
-    </div>
-    <div class="card" style="text-align:center;padding:28px 20px">
-      <div style="font-size:28px;margin-bottom:12px">🏛️</div>
-      <div style="font-weight:800;font-size:14px;color:var(--text);margin-bottom:4px">Префектура ЦАО г. Москвы</div>
-      <div style="font-size:12px;color:var(--text3)">Центральный административный округ</div>
-    </div>
+    <a href="http://foms74.ru/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;height:160px;padding:24px;background:#fff;border-radius:16px;text-decoration:none;transition:opacity .2s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/clients/foms74.png" alt="ТФОМС Челябинской области" style="width:100%;height:100%;object-fit:contain">
+    </a>
+    <a href="https://cao.mos.ru/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;height:160px;padding:24px;background:#fff;border-radius:16px;text-decoration:none;transition:opacity .2s" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/clients/cao.png" alt="Префектура ЦАО г. Москвы" style="width:100%;height:100%;object-fit:contain">
+    </a>
   </div>
   <div style="margin-top:20px;text-align:center;padding:16px;font-size:14px;color:var(--text2);line-height:1.7">
     А также множество предприятий малого, среднего и крупного бизнеса по всей России.
-    <span style="display:block;margin-top:6px;font-size:12px;color:var(--text3);font-style:italic">Раздел дополняется</span>
   </div>
 </section>
 

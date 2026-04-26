@@ -221,7 +221,7 @@ a{color:inherit;text-decoration:none}
   flex-direction:column;
   gap:2px;
   box-shadow:0 12px 40px rgba(0,0,0,.18);
-  max-height:calc(100vh -- var(--nav-h));
+  max-height:calc(100vh - var(--nav-h));
   overflow-y:auto;
 }
 .mobile-nav.open{display:flex}

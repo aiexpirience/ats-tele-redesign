@@ -120,7 +120,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
   flex-direction:column;
   gap:2px;
   box-shadow:0 12px 40px rgba(0,0,0,.18);
-  max-height:calc(100vh -- var(--nav-h));
+  max-height:calc(100vh - var(--nav-h));
   overflow-y:auto;
 }
 .mobile-nav.open{display:flex}
@@ -262,7 +262,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
 .acc-list li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
 @media(max-width:600px){
  .brand-tabs{gap:8px}
- .brand-tab{min-width:calc(50% -- 4px);padding:12px 14px}
+ .brand-tab{min-width:calc(50% - 4px);padding:12px 14px}
  .acc-title{font-size:13px}
  .acc-head{padding:12px 14px}
  .acc-body{padding:0 14px 14px}
@@ -442,7 +442,13 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
 @media(max-width:600px){.art-wrap{padding:0 16px}.art-h2{margin:36px 0 12px}.art-cta{padding:28px 16px}}
 
 </style>
+<div style="background:var(--navy);padding:calc(var(--nav-h) + 40px) 32px 48px">
+  <div style="max-width:820px;margin:0 auto">
+    <h1 style="font-family:'Inter',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:800;color:#fff;margin-bottom:14px;letter-spacing:-.5px">Что такое ИБП: устройство, виды, как выбрать</h1>
+    <p style="font-size:16px;color:rgba(255,255,255,.6);line-height:1.7">Полное руководство по источникам бесперебойного питания — принцип работы, классификация, применение в B2B и промышленности.</p>
+  </div>
 </div>
+<div class="art-wrap" style="padding-top:40px;padding-bottom:60px">
 <!-- Раздел 1 -->
   <h2 class="art-h2" id="chto-takoe">Что такое ИБП и зачем он нужен</h2>
   <p class="art-p">ИБП - <strong>источник бесперебойного питания</strong> (по-английски UPS - Uninterruptible Power Supply) - это электрическое устройство, которое обеспечивает бесперебойное питание подключённой нагрузки при пропадании, просадке или искажении сетевого напряжения.</p>

@@ -401,6 +401,9 @@ img{max-width:100%;display:block}
   .rental-big-num{font-size:120px}
   .hero-stats{grid-template-columns:repeat(3,1fr)}
   .hero-h1{font-size:clamp(36px,9vw,52px);letter-spacing:-1.5px}
+  .hero-glow{width:400px;height:400px;top:-100px;right:-100px}
+  .cta-glow{width:300px;height:300px;top:-100px;right:-50px}
+  .hero-scroll{display:none}
 }
 @media(max-width:520px){
   .symptoms-grid{grid-template-columns:1fr}
@@ -410,6 +413,11 @@ img{max-width:100%;display:block}
   .services-grid{grid-template-columns:1fr}
   .trust-inner{flex-direction:column;align-items:flex-start}
   .trust-divider{display:none}
+  .hero-glow,.cta-glow{display:none}
+  .section,.section--wide{padding:40px var(--px)}
+  .rental-cards{grid-template-columns:1fr}
+  .about-stats{grid-template-columns:1fr 1fr}
+  .rental-big-num{font-size:80px}
 }
 </style>
 

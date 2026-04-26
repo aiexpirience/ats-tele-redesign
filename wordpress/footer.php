@@ -78,7 +78,8 @@ function toggleTheme(){applyTheme(document.documentElement.getAttribute('data-th
 (function(){applyTheme(localStorage.getItem('atc_theme')||getSystemTheme())})();
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(e){if(!localStorage.getItem('atc_theme'))applyTheme(e.matches?'dark':'light')});
 function toggleMenu(){const b=document.getElementById('burger'),m=document.getElementById('mobileNav');b.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':''}
-document.addEventListener('click',function(e){const b=document.getElementById('burger'),m=document.getElementById('mobileNav');if(m&&m.classList.contains('open')&&!m.contains(e.target)&&!b.contains(e.target)){b.classList.remove('open');m.classList.remove('open');document.body.style.overflow=''}})
+document.addEventListener('click',function(e){const b=document.getElementById('burger'),m=document.getElementById('mobileNav');if(m&&m.classList.contains('open')&&!m.contains(e.target)&&!b.contains(e.target)){b.classList.remove('open');m.classList.remove('open');document.body.style.overflow=''}});
+document.querySelectorAll('#mobileNav a').forEach(function(a){a.addEventListener('click',function(){const b=document.getElementById('burger'),m=document.getElementById('mobileNav');b.classList.remove('open');m.classList.remove('open');document.body.style.overflow=''})});
 function handleFile(input){if(input.files&&input.files[0]){document.getElementById('fileText').textContent=input.files[0].name;document.getElementById('fileLabel').style.borderColor='var(--accent)';document.getElementById('fileLabel').style.background='var(--accent-bg)'}}
 function submitForm(){
   const name=document.getElementById('reqName'),phone=document.getElementById('reqPhone');

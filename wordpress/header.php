@@ -13,9 +13,14 @@ $page_title   = get_the_title() ?: get_bloginfo('name');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="canonical" href="<?php echo esc_url(get_permalink() ?: home_url('/')); ?>">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="АТС ТЕЛЕКОМ">
+<meta property="og:url" content="<?php echo esc_url(get_permalink() ?: home_url('/')); ?>">
+<meta property="og:title" content="<?php echo esc_attr(wp_get_document_title()); ?>">
+<?php $atc_desc = get_post_meta(get_the_ID(), '_atc_meta_desc', true); ?>
+<meta property="og:description" content="<?php echo esc_attr($atc_desc ?: 'Ремонт и продажа ИБП 1–250 кВт в Санкт-Петербурге. Подменный фонд 20+ ИБП. Диагностика бесплатно. АТС ТЕЛЕКОМ — с 2009 года.'); ?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/og-image.svg">
 <meta name="theme-color" content="#229ED9">
 <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/logo-icon.png">
