@@ -492,6 +492,20 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
   </div>
 </div>
 
+<div style="max-width:1240px;margin:0 auto;padding:32px 32px 48px">
+  <div style="background:var(--card2);border:1px solid var(--border);border-radius:16px;padding:24px 28px">
+    <p style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:14px">Связанные материалы</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <a href="<?php echo home_url('/repair/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--accent-bg);border:1px solid var(--accent-bd);font-size:12.5px;font-weight:600;color:var(--accent);text-decoration:none">Ремонт ИБП в СПб</a>
+      <a href="<?php echo home_url('/remont-ibp-apc/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--card);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);text-decoration:none">Ремонт APC</a>
+      <a href="<?php echo home_url('/remont-ibp-eaton/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--card);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);text-decoration:none">Ремонт Eaton</a>
+      <a href="<?php echo home_url('/remont-ibp-riello/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--card);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);text-decoration:none">Ремонт Riello</a>
+      <a href="<?php echo home_url('/zamena-akb-ibp/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--card);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);text-decoration:none">Замена АКБ ИБП</a>
+      <a href="<?php echo home_url('/chto-takoe-ibp/'); ?>" style="padding:8px 16px;border-radius:100px;background:var(--card);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);text-decoration:none">Что такое ИБП</a>
+    </div>
+  </div>
+</div>
+
 <script>function toggleTheme(){const h=document.documentElement,cur=h.getAttribute('data-theme')||'light',next=cur==='dark'?'light':'dark';h.setAttribute('data-theme',next);document.getElementById('themeBtn').textContent=next==='dark'?'☀️':'🌙'}</script>
 
 <script>

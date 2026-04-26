@@ -269,6 +269,9 @@
 [data-theme="dark"] p{color:var(--text2)}
 [data-theme="dark"] .section-title{color:var(--text)}
 [data-theme="dark"] .section-desc{color:var(--text2)}
+.related-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.rel-pill{padding:8px 16px;border-radius:100px;background:var(--card2);border:1px solid var(--border);font-size:12.5px;font-weight:600;color:var(--text2);transition:all .2s;text-decoration:none;display:inline-block}
+.rel-pill:hover,.rel-pill.active{border-color:var(--accent-bd);color:var(--accent);background:var(--accent-bg)}
 
 </style>
 </div>
@@ -450,6 +453,22 @@
     <a href="<?php echo home_url('/zamena-akb-ibp/'); ?>" style="text-decoration:none"><div class="card"><div class="card-ico">🔋</div><div class="card-title">Замена АКБ ИБП</div><div class="card-text">Замена батарей для всех марок ИБП. Оригинальные и совместимые АКБ, гарантия на работы и батареи.</div></div></a>
     <a href="<?php echo home_url('/rent/'); ?>" style="text-decoration:none"><div class="card"><div class="card-ico">📦</div><div class="card-title">Аренда ИБП</div><div class="card-text">Подменный фонд на время ремонта. Мощность 0,5–160 кВА, доставка и монтаж по СПб.</div></div></a>
     <a href="<?php echo home_url('/buyout/'); ?>" style="text-decoration:none"><div class="card"><div class="card-ico">💰</div><div class="card-title">Выкуп ИБП</div><div class="card-text">Выкупаем нерабочие и устаревшие ИБП. Быстрая оценка, честная цена, вывоз за наш счёт.</div></div></a>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="section-hd">
+    <div class="accent-bar"></div>
+    <p class="eyebrow">Другие производители</p>
+    <h2 class="display" style="font-size:clamp(18px,2vw,28px);margin-bottom:8px">РЕМОНТИРУЕМ ТАКЖЕ</h2>
+  </div>
+  <div class="related-pills">
+    <a href="<?php echo home_url('/remont-ibp-apc/'); ?>" class="rel-pill">Ремонт APC</a>
+    <a href="<?php echo home_url('/remont-apc-smart-ups/'); ?>" class="rel-pill">APC Smart-UPS</a>
+    <a href="<?php echo home_url('/remont-apc-symmetra-lx/'); ?>" class="rel-pill">APC Symmetra LX</a>
+    <a href="<?php echo home_url('/remont-apc-mge-galaxy/'); ?>" class="rel-pill">APC MGE Galaxy</a>
+    <a href="<?php echo home_url('/remont-ibp-eaton/'); ?>" class="rel-pill">Ремонт Eaton</a>
+    <a href="<?php echo home_url('/repair/'); ?>" class="rel-pill">Все марки ИБП</a>
   </div>
 </section>
 
