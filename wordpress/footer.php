@@ -3,32 +3,20 @@
 .footer{background:#0E1320;border-top:1px solid rgba(34,158,217,.2);padding:48px 32px 24px}
 .footer-inner{max-width:var(--max-w,1240px);margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:20px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
-.footer-logo-text{font-family:'Inter',sans-serif;font-size:12px;font-weight:800;color:#fff;line-height:1.25}
-.footer-desc{font-size:13px;line-height:1.75;color:rgba(255,255,255,.55);margin:10px 0 18px}
-.footer-messengers{display:flex;gap:8px}
-.footer-msg{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.footer-msg.wa{background:rgba(37,211,102,.18);color:#25d366}
-.footer-msg.tg{background:rgba(34,158,217,.18);color:#229ED9}
+.footer-brand{font-family:'Inter',sans-serif;font-size:15px;font-weight:800;color:#fff;line-height:1.2}
+.footer-brand span{color:rgba(255,255,255,.5);display:block;font-size:11px;font-weight:500;margin-top:3px}
+.footer-desc{font-size:13px;line-height:1.7;color:rgba(255,255,255,.45);margin:14px 0 20px;max-width:260px}
+.footer-socials{display:flex;gap:8px}
+.footer-social{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .2s;border:1px solid rgba(255,255,255,.1);text-decoration:none}
+.footer-social:hover{border-color:#1565C0;background:rgba(21,101,192,.15)}
 .footer-col h4{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:14px}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col li{font-size:13px;color:rgba(255,255,255,.55)}
 .footer-col a{font-size:13px;color:rgba(255,255,255,.65);transition:color .15s;text-decoration:none}
 .footer-col a:hover{color:#42A5F5}
 .footer-bottom{display:flex;justify-content:space-between;padding-top:18px;font-size:12px;color:rgba(255,255,255,.35)}
 @media(max-width:960px){.footer-top{grid-template-columns:1fr 1fr;gap:24px}}
 @media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:16px}.footer{padding:32px 16px 16px}.footer-bottom{flex-direction:column;gap:6px;font-size:11px}}
-
-<style>
-.float-wrap{position:fixed;bottom:28px;right:28px;z-index:900;display:flex;flex-direction:column;gap:10px}
-.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:all .25s;text-decoration:none}
-.float-tg{background:#229ED9}
-.float-btn:hover{transform:scale(1.1)}
-@media(max-width:600px){.float-wrap{bottom:14px;right:14px}.float-btn{width:46px;height:46px}}
-.footer-brand{font-family:'Inter',sans-serif;font-size:15px;font-weight:800;color:#fff !important;line-height:1.2}
-.footer-brand span{color:rgba(255,255,255,.5);display:block;font-size:11px;font-weight:500;margin-top:3px}
-.footer-desc{font-size:13px;line-height:1.7;color:rgba(255,255,255,.38);margin:14px 0 20px;max-width:260px}
-.footer-socials{display:flex;gap:8px}
-.footer-social{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .2s;border:1px solid rgba(255,255,255,.1);text-decoration:none}
-.footer-social:hover{border-color:#1565C0;background:rgba(21,101,192,.15)}
 </style>
 <footer class="footer">
   <div class="footer-inner">
@@ -74,9 +62,6 @@
   </div>
 </footer>
 
-<div class="float-wrap">
-  <a href="https://t.me/atstelecom" target="_blank" rel="noopener noreferrer" class="float-btn float-tg"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
-</div>
 
 <script>
 <?php
