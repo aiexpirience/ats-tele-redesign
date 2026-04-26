@@ -564,5 +564,164 @@
     </div>
   </section>
 
+  <div class="divider"></div>
+
+  <!-- КАК ДОБРАТЬСЯ -->
+  <section style="max-width:var(--max-w);margin:0 auto;padding:64px 32px 56px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:800;color:var(--text);margin:0 0 12px">Как добраться до сервисного центра</h2>
+    <p style="font-size:16px;color:var(--text-muted,rgba(0,0,0,.55));margin:0 0 40px;line-height:1.6">Мы находимся по адресу: <strong style="color:var(--text)">ул. Розенштейна, д.&nbsp;34, Санкт-Петербург</strong> — Кировский район, между станциями метро Балтийская и Нарвская.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:24px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:8px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="18" height="18" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0">На метро</h3>
+        </div>
+        <ul style="margin:0;padding:0 0 0 16px;font-size:13px;color:var(--text-muted,rgba(0,0,0,.6));line-height:1.8">
+          <li><strong style="color:var(--text)">м. Балтийская</strong> (2 линия) — пешком 12–15 мин по пр. Стачек и ул. Розенштейна</li>
+          <li><strong style="color:var(--text)">м. Нарвская</strong> (1 линия) — пешком 10–12 мин вдоль ул. Розенштейна</li>
+        </ul>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:24px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:8px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="18" height="18" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h5l3 5v4h-8V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0">На автобусе / трамвае</h3>
+        </div>
+        <ul style="margin:0;padding:0 0 0 16px;font-size:13px;color:var(--text-muted,rgba(0,0,0,.6));line-height:1.8">
+          <li>Авт. <strong style="color:var(--text)">65, 67, 252</strong> — остановка «ул. Розенштейна»</li>
+          <li>Трамвай <strong style="color:var(--text)">16, 19, 25</strong> — остановка «ул. Розенштейна»</li>
+          <li>Авт. <strong style="color:var(--text)">43, 66</strong> — от пл. Стачек</li>
+        </ul>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:24px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:8px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="18" height="18" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          </div>
+          <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0">На автомобиле</h3>
+        </div>
+        <p style="margin:0;font-size:13px;color:var(--text-muted,rgba(0,0,0,.6));line-height:1.8">Въезд с ул. Розенштейна. Бесплатная парковка на прилегающей территории. Удобный подъезд для грузовых авто — возможна разгрузка крупногабаритного оборудования.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- КАК СДАТЬ ИБП -->
+  <section style="max-width:var(--max-w);margin:0 auto;padding:64px 32px 56px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:800;color:var(--text);margin:0 0 12px">Как сдать ИБП в ремонт</h2>
+    <p style="font-size:16px;color:var(--text-muted,rgba(0,0,0,.55));margin:0 0 48px;line-height:1.6">Ремонтируем ИБП мощностью от 300&nbsp;ВА до 250&nbsp;кВА всех популярных марок. Предварительная запись не нужна.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px">
+
+      <div style="text-align:center">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">1</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Свяжитесь с нами</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Позвоните по <a href="tel:+79046490909" style="color:#229ED9;text-decoration:none">+7 904 649-09-09</a> или напишите в Telegram. Опишите симптомы — предварительно оценим стоимость бесплатно.</p>
+      </div>
+
+      <div style="text-align:center">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">2</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Привезите ИБП</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Приезжайте по адресу ул. Розенштейна, 34 по будням с 9:00 до 18:00. Или закажите самовывоз нашим курьером.</p>
+      </div>
+
+      <div style="text-align:center">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">3</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Диагностика</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Полная диагностика — 1–2 часа. Инженер согласует стоимость ремонта, при согласии — диагностика бесплатна.</p>
+      </div>
+
+      <div style="text-align:center">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">4</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Забираете исправный</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Ремонт за 1–5 рабочих дней. Получаете ИБП с гарантийным талоном и актом выполненных работ.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ CONTACTS -->
+  <section style="max-width:760px;margin:0 auto;padding:64px 32px 80px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:800;color:var(--text);text-align:center;margin:0 0 48px">Вопросы о посещении сервисного центра</h2>
+
+    <style>
+    .faq-cnt-item{border-bottom:1px solid var(--border,rgba(0,0,0,.1));padding:20px 0}
+    .faq-cnt-q{font-size:16px;font-weight:600;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;line-height:1.4;list-style:none}
+    .faq-cnt-q::marker,.faq-cnt-q::-webkit-details-marker{display:none}
+    .faq-cnt-q svg{flex-shrink:0;margin-top:2px;transition:transform .2s}
+    details.faq-cnt-item[open] .faq-cnt-q svg{transform:rotate(180deg)}
+    .faq-cnt-a{font-size:14px;color:var(--text-muted,rgba(0,0,0,.6));line-height:1.7;margin:12px 0 0;padding-right:28px}
+    </style>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">Нужна ли предварительная запись?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">Нет, принимаем без записи по будням с 9:00 до 18:00. Для доставки крупного стоечного или напольного оборудования рекомендуем позвонить заранее, чтобы инженер был готов.</p>
+    </details>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">В какие дни и часы работает сервисный центр?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">Понедельник–пятница с 9:00 до 18:00. По вопросам заявок и консультаций можно писать в Telegram в любое время — отвечаем оперативно.</p>
+    </details>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">Принимаете ли нерабочее или очень старое оборудование?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">Да. Берём в ремонт нерабочие, повреждённые и морально устаревшие ИБП. Если восстановление нецелесообразно — предложим выкуп или утилизацию. Оценку делаем бесплатно после диагностики.</p>
+    </details>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">Есть ли парковка у сервисного центра?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">Да, перед зданием есть бесплатная парковка. Для доставки крупногабаритного оборудования возможен заезд грузового транспорта во двор — уточняйте при звонке.</p>
+    </details>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">Как получить счёт и закрывающие документы?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">При сдаче оборудования заключаем договор. После ремонта выдаём акт выполненных работ и гарантийный талон. Счёт на предоплату высылаем на email сразу после согласования стоимости.</p>
+    </details>
+
+    <details class="faq-cnt-item">
+      <summary class="faq-cnt-q">Можно ли заказать вывоз ИБП на ремонт?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-cnt-a">Да, организуем самовывоз по Санкт-Петербургу. Для небольших ИБП (до 20 кг) — курьер. Для тяжёлых стоечных или напольных систем — грузовое авто с грузчиками. Стоимость уточняйте при заявке.</p>
+    </details>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Нужна ли предварительная запись в сервисный центр?","acceptedAnswer":{"@type":"Answer","text":"Нет, принимаем без записи по будням с 9:00 до 18:00. Для крупного оборудования рекомендуем позвонить заранее."}},
+        {"@type":"Question","name":"В какие дни и часы работает сервисный центр АТС ТЕЛЕКОМ?","acceptedAnswer":{"@type":"Answer","text":"Понедельник–пятница с 9:00 до 18:00. Telegram работает круглосуточно."}},
+        {"@type":"Question","name":"Принимаете ли нерабочее оборудование?","acceptedAnswer":{"@type":"Answer","text":"Да, берём нерабочие и повреждённые ИБП. Если ремонт нецелесообразен — предложим выкуп или утилизацию."}},
+        {"@type":"Question","name":"Есть ли парковка у сервисного центра?","acceptedAnswer":{"@type":"Answer","text":"Да, перед зданием бесплатная парковка. Возможен заезд грузового транспорта во двор."}},
+        {"@type":"Question","name":"Как получить счёт и закрывающие документы?","acceptedAnswer":{"@type":"Answer","text":"Договор — при сдаче, акт и гарантийный талон — после ремонта, счёт — сразу после согласования стоимости на email."}},
+        {"@type":"Question","name":"Можно ли заказать вывоз ИБП на ремонт?","acceptedAnswer":{"@type":"Answer","text":"Да, организуем самовывоз по СПб. Курьер для небольших ИБП, грузовое авто для тяжёлых систем."}}
+      ]
+    }
+    </script>
+
+  </section>
+
 </div>
 <?php get_footer(); ?>

@@ -639,6 +639,197 @@ a{color:inherit;text-decoration:none}
 
   <div class="divider"></div>
 
+  <!-- ПОЧЕМУ АТС ТЕЛЕКОМ -->
+  <section style="max-width:var(--max-w);margin:0 auto;padding:64px 32px 56px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(24px,4vw,36px);font-weight:800;color:var(--text);text-align:center;margin:0 0 12px">Почему выбирают АТС ТЕЛЕКОМ</h2>
+    <p style="text-align:center;color:var(--text-muted,rgba(0,0,0,.55));font-size:16px;max-width:600px;margin:0 auto 48px;line-height:1.6">17 лет на рынке ремонта и обслуживания ИБП в Санкт-Петербурге. За это время мы накопили опыт, склад запчастей и доверие сотен клиентов.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Компонентный ремонт</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Меняем только неисправные элементы платы, а не всю плату целиком. Экономия для клиента — до 70% по сравнению с заменой модуля.</p>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Подменный фонд</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Пока ваш ИБП на ремонте — предоставим исправный аналог из подменного фонда, чтобы оборудование не простаивало.</p>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Склад оригинальных запчастей</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Держим в наличии батареи, конденсаторы, транзисторы и модули для APC, Eaton, Riello, Powerware. Ремонт без ожидания поставки.</p>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Гарантия на все виды работ</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">На ремонт — 6 месяцев, на замену АКБ — 12 месяцев, на новое оборудование — гарантия производителя. Работаем официально, выдаём акты.</p>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Диагностика за 1–2 часа</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Полная диагностика любого ИБП мощностью до 20 кВт — в течение рабочего дня. Срочная диагностика — в течение двух часов с момента привоза.</p>
+      </div>
+
+      <div style="background:var(--card-bg,rgba(0,0,0,.03));border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;padding:28px 24px">
+        <div style="width:44px;height:44px;border-radius:10px;background:rgba(34,158,217,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg width="22" height="22" fill="none" stroke="#229ED9" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px">Работаем с юридическими лицами</h3>
+        <p style="font-size:14px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">ООО «АТС ТЕЛЕКОМ» — плательщик НДС. Полный пакет документов: договор, счёт, накладная, акт выполненных работ, гарантийный талон.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- КАК МЫ РАБОТАЕМ -->
+  <section style="max-width:var(--max-w);margin:0 auto;padding:64px 32px 56px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(24px,4vw,36px);font-weight:800;color:var(--text);text-align:center;margin:0 0 12px">Как мы работаем</h2>
+    <p style="text-align:center;color:var(--text-muted,rgba(0,0,0,.55));font-size:16px;max-width:560px;margin:0 auto 48px;line-height:1.6">Простой и прозрачный процесс — от заявки до получения исправного оборудования.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;counter-reset:steps">
+
+      <div style="text-align:center;position:relative">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">1</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Заявка</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Позвоните, напишите в Telegram или заполните форму на сайте. Опишите проблему — предварительно оценим стоимость сразу.</p>
+      </div>
+
+      <div style="text-align:center;position:relative">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">2</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Привоз или самовывоз</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Привезите ИБП сами или закажите забор нашим курьером. Для крупного и тяжёлого оборудования организуем грузоперевозку.</p>
+      </div>
+
+      <div style="text-align:center;position:relative">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">3</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Диагностика</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Инженер проводит полную диагностику и согласовывает стоимость ремонта. Диагностика бесплатна, если вы принимаете наш счёт.</p>
+      </div>
+
+      <div style="text-align:center;position:relative">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">4</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Ремонт</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Выполняем ремонт в срок от 1 до 5 рабочих дней в зависимости от сложности. Держим вас в курсе хода работ.</p>
+      </div>
+
+      <div style="text-align:center;position:relative">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#229ED9,#1565C0);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">5</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin:0 0 8px">Выдача и гарантия</h3>
+        <p style="font-size:13px;color:var(--text-muted,rgba(0,0,0,.55));line-height:1.6;margin:0">Забираете исправный ИБП, получаете акт и гарантийный талон. Оплата любым удобным способом — наличные, карта, р/с.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section style="max-width:760px;margin:0 auto;padding:64px 32px 72px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(24px,4vw,36px);font-weight:800;color:var(--text);text-align:center;margin:0 0 48px">Часто задаваемые вопросы</h2>
+
+    <style>
+    .faq-item{border-bottom:1px solid var(--border,rgba(0,0,0,.1));padding:20px 0}
+    .faq-q{font-size:16px;font-weight:600;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;line-height:1.4;list-style:none}
+    .faq-q::marker{display:none}
+    .faq-q::-webkit-details-marker{display:none}
+    .faq-q svg{flex-shrink:0;margin-top:2px;transition:transform .2s}
+    details[open] .faq-q svg{transform:rotate(180deg)}
+    .faq-a{font-size:14px;color:var(--text-muted,rgba(0,0,0,.6));line-height:1.7;margin:12px 0 0;padding-right:28px}
+    </style>
+
+    <details class="faq-item">
+      <summary class="faq-q">Ремонтируете ИБП любых марок и мощностей?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Да, ремонтируем ИБП от 300 ВА до 250 кВА: APC by Schneider Electric, Eaton (Powerware), Riello, Delta, Ippon, Powercom и другие бренды. Работаем с однофазными, трёхфазными и модульными системами.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Сколько стоит диагностика?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Диагностика бесплатна при согласии на ремонт у нас. Если вы решили не ремонтировать — стоимость диагностики составит 900–1 500 руб. в зависимости от мощности и типа ИБП.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Есть ли гарантия на ремонт?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">На все виды ремонта — 6 месяцев. На замену аккумуляторных батарей — 12 месяцев. На новое оборудование распространяется гарантия производителя (обычно 2–3 года).</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Можно ли сдать ИБП без предварительной записи?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Можно. Принимаем оборудование без записи по будням с 9:00 до 18:00. Для крупногабаритного оборудования (от 6U/стоечные, напольные) рекомендуем предупредить заранее — чтобы подготовить место и специалиста.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Как быстро делается ремонт?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Стандартный срок — 1–5 рабочих дней. Замена АКБ и типовые неисправности — часто день в день. При необходимости срочного ремонта сообщите об этом менеджеру — постараемся выполнить в течение суток.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Работаете ли с корпоративными клиентами?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Да, это наш основной профиль. ООО «АТС ТЕЛЕКОМ» — плательщик НДС. Оформляем договор, счёт, акт выполненных работ и гарантийный талон. Возможна оплата по безналичному расчёту с отсрочкой для постоянных клиентов.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Выезжаете ли на объект?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Да. Организуем выезд инженера на ваш объект в Санкт-Петербурге и ЛО для диагностики, технического обслуживания, замены АКБ или монтажа новых ИБП. Стоимость выезда уточняйте при заявке.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q">Берёте ли нерабочее оборудование на выкуп?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-a">Да, выкупаем неисправные, устаревшие и нерабочие ИБП. Оценку проводим по фото или описанию в течение часа. Возможен выкуп с самовывозом за наш счёт при достаточном объёме.</p>
+    </details>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Ремонтируете ИБП любых марок и мощностей?","acceptedAnswer":{"@type":"Answer","text":"Да, ремонтируем ИБП от 300 ВА до 250 кВА: APC, Eaton, Riello, Delta, Ippon и другие. Работаем с однофазными, трёхфазными и модульными системами."}},
+        {"@type":"Question","name":"Сколько стоит диагностика?","acceptedAnswer":{"@type":"Answer","text":"Диагностика бесплатна при согласии на ремонт. Если вы решили не ремонтировать — 900–1500 руб. в зависимости от типа ИБП."}},
+        {"@type":"Question","name":"Есть ли гарантия на ремонт?","acceptedAnswer":{"@type":"Answer","text":"На ремонт — 6 месяцев, на замену АКБ — 12 месяцев, на новое оборудование — гарантия производителя."}},
+        {"@type":"Question","name":"Можно ли сдать ИБП без предварительной записи?","acceptedAnswer":{"@type":"Answer","text":"Да, принимаем без записи по будням с 9:00 до 18:00. Для крупногабаритного оборудования рекомендуем предупредить заранее."}},
+        {"@type":"Question","name":"Как быстро делается ремонт?","acceptedAnswer":{"@type":"Answer","text":"Стандартный срок 1–5 рабочих дней. Замена АКБ и типовые неисправности — часто день в день."}},
+        {"@type":"Question","name":"Работаете ли с корпоративными клиентами?","acceptedAnswer":{"@type":"Answer","text":"Да, это наш основной профиль. Оформляем договор, счёт, акт выполненных работ. Возможна оплата по безналичному расчёту."}},
+        {"@type":"Question","name":"Выезжаете ли на объект?","acceptedAnswer":{"@type":"Answer","text":"Да, выезжаем на объект в СПб и ЛО для диагностики, ТО, замены АКБ или монтажа ИБП."}},
+        {"@type":"Question","name":"Берёте ли нерабочее оборудование на выкуп?","acceptedAnswer":{"@type":"Answer","text":"Да, выкупаем неисправные и нерабочие ИБП. Оценку проводим по фото в течение часа."}}
+      ]
+    }
+    </script>
+
+  </section>
+
+  <div class="divider"></div>
+
   <!-- CTA -->
   <div style="max-width:var(--max-w);margin:0 auto;padding:56px 32px 80px">
     <div class="cta-band">
