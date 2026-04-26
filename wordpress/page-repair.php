@@ -549,20 +549,20 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
         <span class="brand-tab-name">APC by Schneider</span>
         <span class="brand-tab-count">10 серий</span>
       </button>
-      <button class="brand-tab soon">
+      <button class="brand-tab" onclick="showBrand('eaton')">
         <span class="brand-tab-ico">🔋</span>
         <span class="brand-tab-name">Eaton</span>
-        <span class="brand-tab-count">скоро</span>
+        <span class="brand-tab-count">4 серии</span>
       </button>
-      <button class="brand-tab soon">
+      <button class="brand-tab" onclick="showBrand('riello')">
         <span class="brand-tab-ico">🇮🇹</span>
         <span class="brand-tab-name">Riello UPS</span>
-        <span class="brand-tab-count">скоро</span>
+        <span class="brand-tab-count">3 серии</span>
       </button>
-      <button class="brand-tab soon">
+      <button class="brand-tab" onclick="showBrand('other')">
         <span class="brand-tab-ico">🔌</span>
         <span class="brand-tab-name">Другие бренды</span>
-        <span class="brand-tab-count">скоро</span>
+        <span class="brand-tab-count">6 марок</span>
       </button>
     </div>
 
@@ -747,24 +747,188 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
     </div>
 
     <div class="brand-panel" id="panel-eaton">
-      <div style="background:var(--card2);border:1.5px dashed var(--border);border-radius:16px;padding:40px;text-align:center">
-        <div style="font-size:40px;margin-bottom:12px">🔋</div>
-        <div style="font-weight:800;font-size:16px;color:var(--text);margin-bottom:8px">Eaton - скоро</div>
-        <div style="font-size:14px;color:var(--text3)">Подробное описание серий 9PX, 9SX, 5PX и других появится в ближайшее время.</div>
+      <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">⚡</span><span>Eaton 9PX (1–11 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <div style="margin-bottom:14px">
+              <div style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Обслуживаем модели</div>
+              <div class="smart-tags">
+                <span class="smart-tag">9PX700I</span><span class="smart-tag">9PX1000I</span><span class="smart-tag">9PX1500G</span><span class="smart-tag">9PX2000IRTBP</span><span class="smart-tag">9PX2000IRT2U</span><span class="smart-tag">9PX3000IRT2U</span><span class="smart-tag">9PX5KIRTNBP</span><span class="smart-tag">9PX8KIRTNBP</span><span class="smart-tag">9PX11KIRTNBP</span>
+              </div>
+            </div>
+            <ul class="acc-list">
+              <li>Диагностика и ремонт инвертора, выпрямителя, зарядного устройства</li>
+              <li>Ремонт платы управления и дисплейного модуля</li>
+              <li>Замена АКБ — оригинальные и совместимые батареи в наличии</li>
+              <li>Сброс наработки аккумуляторных батарей, калибровка ёмкости</li>
+              <li>Настройка и прошивка Network-M2 / Network-M3 SNMP-карт</li>
+              <li style="margin-top:8px;color:var(--text2);background:var(--accent-bg);border-radius:8px;padding:8px 12px 8px 28px"><em>Возможна выездная диагностика на объекте в СПб и ЛО с предоставлением подменного ИБП на время ремонта.</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">🔋</span><span>Eaton 9SX / 5PX / 5SC (0.5–3 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <div style="margin-bottom:14px">
+              <div style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Обслуживаем модели</div>
+              <div class="smart-tags">
+                <span class="smart-tag">9SX700I</span><span class="smart-tag">9SX1000I</span><span class="smart-tag">9SX1500I</span><span class="smart-tag">9SX2000I</span><span class="smart-tag">9SX3000I</span>
+                <span class="smart-tag">5PX650I</span><span class="smart-tag">5PX1000I</span><span class="smart-tag">5PX1500I</span><span class="smart-tag">5PX2200IRT2U</span><span class="smart-tag">5PX3000IRT2U</span>
+                <span class="smart-tag">5SC500I</span><span class="smart-tag">5SC750I</span><span class="smart-tag">5SC1000I</span><span class="smart-tag">5SC1500I</span>
+              </div>
+            </div>
+            <ul class="acc-list">
+              <li>Ремонт инвертора, выпрямителя, силовых транзисторов</li>
+              <li>Ремонт и замена платы управления, ЖК-дисплея</li>
+              <li>Замена АКБ — оригинальные батарейные кассеты и совместимые аналоги</li>
+              <li>Прошивка и настройка Network-M2 / Network-M3 SNMP-карт</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">🏭</span><span>Eaton 9130 / 9155 (3–40 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <ul class="acc-list">
+              <li>Ремонт однофазных <strong>Eaton 9130</strong>: от 700 ВА до 6 кВА (настольные и стоечные варианты)</li>
+              <li>Ремонт трёхфазных <strong>Eaton 9155</strong>: 8–40 кВА — инвертор, байпас, платы управления</li>
+              <li>Замена аккумуляторных батарей — батарейные кассеты EBM и кабинеты любых конфигураций</li>
+              <li>Ремонт и замена платы управления, ЖК-панели, карт расширения</li>
+              <li>Выездная диагностика и заключение договора на ТО в СПб и ЛО</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">🏗️</span><span>Eaton 9355 / Powerware 9390 / 9395 (10–250 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <ul class="acc-list">
+              <li>Диагностика и ремонт <strong>Eaton 9355</strong> (10–80 кВА) — трёхфазный, силовые модули, байпас</li>
+              <li>Ремонт и обслуживание <strong>Powerware 9390</strong> (80–160 кВА)</li>
+              <li>Ремонт и обслуживание <strong>Powerware 9395</strong> (225–1100 кВА) — модульные системы</li>
+              <li>Замена АКБ в батарейных кабинетах, ремонт плат и силовых модулей</li>
+              <li>Заключение договора на техническое обслуживание с выездом на объект</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
+
     <div class="brand-panel" id="panel-riello">
-      <div style="background:var(--card2);border:1.5px dashed var(--border);border-radius:16px;padding:40px;text-align:center">
-        <div style="font-size:40px;margin-bottom:12px">🇮🇹</div>
-        <div style="font-weight:800;font-size:16px;color:var(--text);margin-bottom:8px">Riello UPS - скоро</div>
-        <div style="font-size:14px;color:var(--text3)">Подробное описание серий Multi Sentry, Master и других появится в ближайшее время.</div>
+      <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">🇮🇹</span><span>Riello iDialog / iPlug (0.6–3 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <div style="margin-bottom:14px">
+              <div style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Обслуживаем модели</div>
+              <div class="smart-tags">
+                <span class="smart-tag">iDialog IDG 800</span><span class="smart-tag">iDialog IDG 1100</span><span class="smart-tag">iDialog IDG 2000</span><span class="smart-tag">iDialog IDG 3000</span>
+                <span class="smart-tag">iPlug IP 600</span><span class="smart-tag">iPlug IP 800</span><span class="smart-tag">iPlug IP 1100</span><span class="smart-tag">iPlug IP 2000</span>
+              </div>
+            </div>
+            <ul class="acc-list">
+              <li>Диагностика и ремонт инвертора, зарядного устройства</li>
+              <li>Ремонт и замена платы управления, ЖК-дисплея</li>
+              <li>Замена АКБ — оригинальные и совместимые батареи в наличии</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">⚡</span><span>Riello Master HP / Vision Dual / Sentinel Dual (1–20 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <div style="margin-bottom:14px">
+              <div style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Обслуживаем модели</div>
+              <div class="smart-tags">
+                <span class="smart-tag">Master HP 1000</span><span class="smart-tag">Master HP 2000</span><span class="smart-tag">Master HP 3000</span><span class="smart-tag">Master HP 5000</span><span class="smart-tag">Master HP 10000</span>
+                <span class="smart-tag">Vision Dual 1100</span><span class="smart-tag">Vision Dual 2200</span><span class="smart-tag">Vision Dual 3300</span><span class="smart-tag">Vision Dual 6000</span>
+                <span class="smart-tag">Sentinel Dual 1000</span><span class="smart-tag">Sentinel Dual 3000</span><span class="smart-tag">Sentinel Dual 10000</span>
+              </div>
+            </div>
+            <ul class="acc-list">
+              <li>Ремонт инвертора, выпрямителя, байпаса, силовых транзисторов</li>
+              <li>Ремонт и замена платы управления, дисплейного модуля</li>
+              <li>Замена АКБ в стоечных и напольных корпусах, сброс наработки</li>
+              <li>Настройка и прошивка NetMan SNMP-адаптера</li>
+              <li style="margin-top:8px;color:var(--text2);background:var(--accent-bg);border-radius:8px;padding:8px 12px 8px 28px"><em>Возможна выездная диагностика на объекте в СПб и ЛО.</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" onclick="toggleAcc(this)">
+            <div class="acc-title"><span class="acc-ico">🏭</span><span>Riello Multi Sentry / Multi Power (10–300 кВА)</span></div>
+            <span class="acc-arrow">›</span>
+          </button>
+          <div class="acc-body">
+            <ul class="acc-list">
+              <li>Диагностика и ремонт трёхфазных <strong>Riello Multi Sentry</strong> (10–120 кВА) — однофазный/трёхфазный выход</li>
+              <li>Ремонт и обслуживание <strong>Riello Multi Power</strong> (10–300 кВА) — параллельные модульные системы</li>
+              <li>Замена АКБ в батарейных кабинетах, ремонт плат управления и силовых модулей</li>
+              <li>Выездная диагностика и заключение договора на ТО с регулярными выездами</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
+
     <div class="brand-panel" id="panel-other">
-      <div style="background:var(--card2);border:1.5px dashed var(--border);border-radius:16px;padding:40px;text-align:center">
-        <div style="font-size:40px;margin-bottom:12px">🔌</div>
-        <div style="font-weight:800;font-size:16px;color:var(--text);margin-bottom:8px">CyberPower, Штиль, Ippon - скоро</div>
-        <div style="font-size:14px;color:var(--text3)">Ремонтируем все бренды. Подробные описания по сериям добавляются.</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">CyberPower</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Серии CP, BR, OR, PR — от 500 ВА до 10 кВА. Ремонт инвертора, замена АКБ, ремонт платы управления.</p>
+        </div>
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">Ippon</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Back Basic, Back Pro, Smart Winner, Smart Power — ремонт, замена АКБ, устранение неисправностей платы управления.</p>
+        </div>
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">Штиль</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Серии ИБП Штиль ИД, ИИ — диагностика, ремонт инвертора, замена батарейных блоков.</p>
+        </div>
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">Delta Electronics</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Серии Amplon, Modulon — ремонт силовой части, замена АКБ, ремонт плат управления.</p>
+        </div>
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">Powercom</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Серии BNT, WOW, MBR, SKP — ремонт и замена аккумуляторов, ремонт зарядного устройства.</p>
+        </div>
+
+        <div style="background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:20px 22px">
+          <div style="font-size:13px;font-weight:800;color:var(--text);margin-bottom:6px">Парус-Электро / Связь Инжиниринг</div>
+          <p style="font-size:13px;color:var(--text3);line-height:1.6;margin:0">Отечественные ИБП — диагностика, ремонт, замена компонентов. Работаем по официальным актам.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -839,6 +1003,112 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
       <span style="background:var(--card);border:1.5px solid var(--border);color:var(--text2);border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700">Schneider Electric</span>
     </div>
   </section>
+
+  <div class="divider"></div>
+
+  <!-- ПЕРЕЛИНКОВКА -->
+  <section style="max-width:var(--max-w);margin:0 auto;padding:48px 32px">
+    <p style="font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px">Подробнее по брендам</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <a href="<?php echo home_url('/remont-ibp-apc/'); ?>" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--card);font-size:13px;font-weight:700;color:var(--text);text-decoration:none;transition:all .18s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">⚡ Ремонт APC by Schneider Electric</a>
+      <a href="<?php echo home_url('/remont-ibp-eaton/'); ?>" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--card);font-size:13px;font-weight:700;color:var(--text);text-decoration:none;transition:all .18s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">🔋 Ремонт Eaton (Powerware)</a>
+      <a href="<?php echo home_url('/remont-ibp-riello/'); ?>" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--card);font-size:13px;font-weight:700;color:var(--text);text-decoration:none;transition:all .18s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">🇮🇹 Ремонт Riello UPS</a>
+      <a href="<?php echo home_url('/zamena-akb-ibp/'); ?>" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--card);font-size:13px;font-weight:700;color:var(--text);text-decoration:none;transition:all .18s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">🪫 Замена АКБ ИБП</a>
+      <a href="<?php echo home_url('/services/'); ?>" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:10px;border:1.5px solid var(--border);background:var(--card);font-size:13px;font-weight:700;color:var(--text);text-decoration:none;transition:all .18s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">→ Все услуги</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section style="max-width:760px;margin:0 auto;padding:64px 32px 72px">
+    <h2 style="font-family:'Inter',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:800;color:var(--text);text-align:center;margin:0 0 48px">Частые вопросы о ремонте ИБП</h2>
+
+    <style>
+    .faq-r-item{border-bottom:1px solid var(--border,rgba(0,0,0,.1));padding:20px 0}
+    .faq-r-q{font-size:16px;font-weight:600;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;line-height:1.4;list-style:none}
+    .faq-r-q::marker,.faq-r-q::-webkit-details-marker{display:none}
+    .faq-r-q svg{flex-shrink:0;margin-top:2px;transition:transform .2s}
+    details.faq-r-item[open] .faq-r-q svg{transform:rotate(180deg)}
+    .faq-r-a{font-size:14px;color:var(--text2);line-height:1.7;margin:12px 0 0;padding-right:28px}
+    </style>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Ремонтируете ли ИБП мощностью выше 20 кВА?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Да, работаем с ИБП от 300 ВА до 250 кВА. Ремонтируем однофазные, трёхфазные и модульные системы — APC Symmetra PX 250/500 кВА, Eaton Powerware 9395, Riello Multi Power. Для мощного оборудования возможна выездная диагностика на объекте.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Сколько стоит ремонт ИБП?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Стоимость зависит от марки, мощности и характера неисправности. Замена АКБ — от 1 500 руб. Компонентный ремонт платы управления — от 3 000 руб. Ремонт силовой части — от 5 000 руб. Точную стоимость называем после бесплатной диагностики.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Что значит «компонентный ремонт»?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Это ремонт на уровне компонентов печатной платы — меняем конкретные неисправные конденсаторы, транзисторы, резисторы и микросхемы, а не всю плату целиком. Экономия для клиента — до 60–70% по сравнению с заменой модуля на новый.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Есть ли гарантия на выполненный ремонт?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Да. На все виды ремонта — гарантия 6 месяцев. На замену аккумуляторных батарей — 12 месяцев. Гарантия подтверждается гарантийным талоном и актом выполненных работ.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Есть ли подменный ИБП на время ремонта?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Да, держим подменный фонд ИБП — можем предоставить аналог на время ремонта, чтобы ваше оборудование не простаивало. Уточняйте наличие нужной мощности при оформлении заявки.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Ремонтируете ли ИБП марок Eaton и Riello?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Да, ремонтируем все популярные марки: APC by Schneider Electric, Eaton (включая Powerware), Riello UPS, CyberPower, Ippon, Delta, Штиль и другие. Специализация — ИБП для серверных и промышленного оборудования.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Как долго ждать ремонта?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Диагностика — 1–2 часа. Замена АКБ и типовые неисправности — часто день в день. Сложный компонентный ремонт — 1–5 рабочих дней. При необходимости срочного ремонта сообщите менеджеру — постараемся ускорить.</p>
+    </details>
+
+    <details class="faq-r-item">
+      <summary class="faq-r-q">Выезжаете ли на объект для диагностики?
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <p class="faq-r-a">Да, выезжаем в пределах Санкт-Петербурга и Ленинградской области. Особенно актуально для тяжёлого и крупногабаритного оборудования: трёхфазных ИБП, стоечных систем Symmetra/Powerware весом от 100 кг.</p>
+    </details>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Ремонтируете ли ИБП мощностью выше 20 кВА?","acceptedAnswer":{"@type":"Answer","text":"Да, работаем с ИБП от 300 ВА до 250 кВА. Ремонтируем однофазные, трёхфазные и модульные системы APC, Eaton, Riello. Для мощного оборудования возможна выездная диагностика на объекте."}},
+        {"@type":"Question","name":"Сколько стоит ремонт ИБП?","acceptedAnswer":{"@type":"Answer","text":"Замена АКБ — от 1 500 руб., компонентный ремонт платы — от 3 000 руб., ремонт силовой части — от 5 000 руб. Точную стоимость называем после бесплатной диагностики."}},
+        {"@type":"Question","name":"Что значит компонентный ремонт?","acceptedAnswer":{"@type":"Answer","text":"Ремонт на уровне компонентов платы — меняем только неисправные детали, а не всю плату. Экономия до 60–70% по сравнению с заменой модуля."}},
+        {"@type":"Question","name":"Есть ли гарантия на ремонт ИБП?","acceptedAnswer":{"@type":"Answer","text":"На ремонт — 6 месяцев, на замену АКБ — 12 месяцев. Подтверждается гарантийным талоном и актом выполненных работ."}},
+        {"@type":"Question","name":"Есть ли подменный ИБП на время ремонта?","acceptedAnswer":{"@type":"Answer","text":"Да, держим подменный фонд ИБП — предоставляем аналог на время ремонта, чтобы оборудование не простаивало."}},
+        {"@type":"Question","name":"Ремонтируете ли ИБП Eaton и Riello?","acceptedAnswer":{"@type":"Answer","text":"Да, ремонтируем все марки: APC, Eaton (Powerware), Riello, CyberPower, Ippon, Delta, Штиль и другие."}},
+        {"@type":"Question","name":"Как долго делается ремонт ИБП?","acceptedAnswer":{"@type":"Answer","text":"Диагностика — 1–2 часа. Замена АКБ — день в день. Сложный ремонт — 1–5 рабочих дней."}},
+        {"@type":"Question","name":"Выезжаете на объект для диагностики ИБП?","acceptedAnswer":{"@type":"Answer","text":"Да, выезжаем в СПб и ЛО. Особенно актуально для тяжёлых трёхфазных и стоечных систем весом от 100 кг."}}
+      ]
+    }
+    </script>
+
+  </section>
+
+  <div class="divider"></div>
 
   <!-- НЕ НАШЛИ ОТВЕТ -->
   <section class="section" style="padding-bottom:80px">
